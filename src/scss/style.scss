@@ -1,22 +1,4 @@
+@import "./layout.scss";
+@import "./components.scss";
 @import "./vendors.scss";
-
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-family: "Oswald", sans-serif;
-	font-size: 1.2rem;
-}
-
-.hidden {
-	display: none;
-}
+@import "./base.scss";
