@@ -1,3 +1,7 @@
+//-----COLORS-----
+
+//-----SETTINGS-----
+
 *,
 *::before,
 *::after {
@@ -12,9 +16,8 @@ html {
 
 body {
 	font-family: "Oswald", sans-serif;
-	font-size: 1.2rem;
-}
-
-.hidden {
-	display: none;
+	font-size: 2rem;
+	background-image: url(../../src/images/stars-g41a1685af_640.png);
+	background-size: cover;
+	color: white;
 }
