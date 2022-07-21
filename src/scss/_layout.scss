@@ -3,7 +3,7 @@
 	width: 100%;
 	display: flex;
 	padding: 5em;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -80,12 +80,22 @@
 			font-size: 2.2rem;
 			line-height: 1.5em;
 			margin-top: 2em;
+			color: $dark-white;
 
 			& span {
 				text-transform: uppercase;
 				font-weight: bold;
-				color: $main-yellow;
-				letter-spacing: 0.4rem;
+				letter-spacing: 0.3rem;
+			}
+
+			& .personal-animation--active {
+				color: $dirty-white;
+				font-size: 2.6rem;
+				padding: 0.5em 0;
+
+				& span {
+					color: $main-yellow;
+				}
 			}
 		}
 	}
