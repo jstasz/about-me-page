@@ -3,6 +3,7 @@
 	width: 100%;
 	display: flex;
 	padding: 5em;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .wrapper {
@@ -17,7 +18,6 @@
 
 .title {
 	text-transform: uppercase;
-	// color: #00a9b5;
 	color: $main-yellow;
 	text-shadow: 1px 1px 2px rgb(21, 21, 21), 0.7em 0 2em rgb(172, 169, 169),
 		0 0 0.5em rgb(195, 187, 187);
@@ -28,7 +28,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 5em;
+		margin-bottom: 3em;
 
 		&-photo {
 			margin: 0 3em;
@@ -44,12 +44,19 @@
 			font-size: 3rem;
 			letter-spacing: 0.2rem;
 			text-align: center;
+
+			&::after {
+				width: 100%;
+				height: 1em;
+				color: $main-yellow;
+			}
 		}
 	}
 
 	&__content {
 		display: flex;
-		height: 60%;
+		height: 70%;
+		padding: 1em;
 	}
 
 	&__personal,
@@ -72,13 +79,13 @@
 			text-align: right;
 			font-size: 2.2rem;
 			line-height: 1.5em;
-			margin-top: 5em;
+			margin-top: 2em;
 
 			& span {
 				text-transform: uppercase;
 				font-weight: bold;
 				color: $main-yellow;
-				letter-spacing: 0.2rem;
+				letter-spacing: 0.4rem;
 			}
 		}
 	}
@@ -88,14 +95,24 @@
 		flex-direction: column;
 		justify-content: space-between;
 
-		&-icons {
-			margin: 1em;
-			display: flex;
-			justify-content: space-around;
+		&-title {
+			color: $main-yellow;
 			text-align: center;
+			padding-bottom: 1em;
+			grid-column: 1/5;
+			grid-row: 1;
+			font-size: 2.6rem;
+			letter-spacing: 0.4rem;
+		}
+
+		&-icons {
+			text-align: center;
+			display: grid;
+			grid-template-columns: repeat(4, 3fr);
+			gap: 1.5em;
 
 			& .fa-brands {
-				font-size: 8rem;
+				font-size: 6rem;
 			}
 
 			& .icon-name {
@@ -104,6 +121,8 @@
 		}
 
 		&-watch-projects {
+			margin: 0 auto;
+			padding-top: 2em;
 			text-align: center;
 
 			& .fa-chevron-down {
@@ -114,31 +133,3 @@
 		}
 	}
 }
-
-// .about-me,
-// .skills {
-// 	height: 70%;
-// 	padding: 2em;
-// 	color: white;
-// 	width: 50%;
-// }
-
-// .about-me {
-// 	border: 2px, solid, grey;
-// 	text-align: right;
-
-// 	&__photo {
-// 		position: absolute;
-// 		left: 50%;
-// 		transform: translateX(-50%);
-// 		top: 10%;
-// 	}
-
-// 	&__description {
-// 		text-align: center;
-// 		margin: 2em;
-// 	}
-// }
-
-// .skills {
-// }
