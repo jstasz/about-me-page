@@ -24,6 +24,8 @@
 }
 
 .about-me {
+	letter-spacing: 0.2em;
+
 	&__header {
 		display: flex;
 		justify-content: center;
@@ -77,7 +79,6 @@
 
 		&-animation {
 			text-align: right;
-			font-size: 2.2rem;
 			line-height: 1.5em;
 			margin-top: 2em;
 			color: $dark-white;
@@ -85,7 +86,6 @@
 			& span {
 				text-transform: uppercase;
 				font-weight: bold;
-				letter-spacing: 0.3rem;
 			}
 
 			& .personal-animation--active {
@@ -112,7 +112,6 @@
 			grid-column: 1/5;
 			grid-row: 1;
 			font-size: 2.6rem;
-			letter-spacing: 0.4rem;
 		}
 
 		&-icons {
@@ -134,6 +133,10 @@
 			margin: 0 auto;
 			padding-top: 2em;
 			text-align: center;
+
+			& .watch-projects {
+				font-size: 2.6rem;
+			}
 
 			& .fa-chevron-down {
 				font-size: 4rem;
