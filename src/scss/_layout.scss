@@ -17,6 +17,10 @@
 
 .title {
 	text-transform: uppercase;
+	// color: #00a9b5;
+	color: $main-yellow;
+	text-shadow: 1px 1px 2px rgb(21, 21, 21), 0.7em 0 2em rgb(172, 169, 169),
+		0 0 0.5em rgb(195, 187, 187);
 }
 
 .about-me {
@@ -24,25 +28,28 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 3em;
+		margin-bottom: 5em;
 
 		&-photo {
-			margin: 0 2em;
+			margin: 0 3em;
 
 			&--img {
 				border-radius: 50%;
+				width: 10em;
+				height: 10em;
 			}
 		}
 
 		&-title {
-			font-size: 2.6rem;
+			font-size: 3rem;
+			letter-spacing: 0.2rem;
+			text-align: center;
 		}
 	}
 
 	&__content {
 		display: flex;
-		height: 70%;
-		letter-spacing: 0.2em;
+		height: 60%;
 	}
 
 	&__personal,
@@ -58,11 +65,21 @@
 
 		&-description {
 			text-align: center;
+			letter-spacing: 0.2em;
 		}
 
 		&-animation {
-			text-transform: uppercase;
 			text-align: right;
+			font-size: 2.2rem;
+			line-height: 1.5em;
+			margin-top: 5em;
+
+			& span {
+				text-transform: uppercase;
+				font-weight: bold;
+				color: $main-yellow;
+				letter-spacing: 0.2rem;
+			}
 		}
 	}
 
@@ -72,21 +89,27 @@
 		justify-content: space-between;
 
 		&-icons {
+			margin: 1em;
 			display: flex;
 			justify-content: space-around;
 			text-align: center;
 
-			& i {
-				font-size: 10rem;
+			& .fa-brands {
+				font-size: 8rem;
+			}
+
+			& .icon-name {
+				text-transform: uppercase;
 			}
 		}
 
 		&-watch-projects {
 			text-align: center;
 
-			& i {
+			& .fa-chevron-down {
 				font-size: 4rem;
 				padding: 0.3em;
+				cursor: pointer;
 			}
 		}
 	}
