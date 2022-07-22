@@ -1,125 +1,97 @@
-// @media (min-width: 1200px) {
-// 	.about-me {
-// 		letter-spacing: 0.2em;
+@media (min-width: 1200px) {
+	.container {
+		padding: 5em;
+	}
 
-// 		&__header {
-// 			display: flex;
-// 			justify-content: center;
-// 			align-items: center;
-// 			margin-bottom: 3em;
+	.about-me {
+		font-size: 2rem;
 
-// 			&-photo {
-// 				margin: 0 3em;
+		&__header {
+			flex-direction: row;
+			margin-bottom: 2em;
 
-// 				&--img {
-// 					border-radius: 50%;
-// 					width: 10em;
-// 					height: 10em;
-// 				}
-// 			}
+			&-photo {
+				margin: 1em 1em 1em 10em;
+			}
 
-// 			&-title {
-// 				font-size: 3rem;
-// 				letter-spacing: 0.2rem;
-// 				text-align: center;
+			&-title {
+				& .header-title {
+					font-size: 4rem;
+				}
+			}
+		}
 
-// 				&::after {
-// 					width: 100%;
-// 					height: 1em;
-// 					color: $main-yellow;
-// 				}
-// 			}
-// 		}
+		&__content {
+			flex-direction: row;
+		}
 
-// 		&__content {
-// 			display: flex;
-// 			height: 70%;
-// 			padding: 1em;
-// 		}
+		&__personal,
+		&__skills {
+			width: 50%;
+			padding: 1em 2em;
+		}
 
-// 		&__personal,
-// 		&__skills {
-// 			width: 50%;
-// 			padding: 1em 2em;
-// 		}
+		&__personal {
+			&-description {
+				text-align: center;
+				letter-spacing: 0.2em;
+			}
 
-// 		&__personal {
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-between;
+			&-animation {
+				line-height: 1.5em;
+				font-size: 2.2rem;
 
-// 			&-description {
-// 				text-align: center;
-// 				letter-spacing: 0.2em;
-// 			}
+				& .personal-animation--active {
+					font-size: 2.6rem;
+					padding: 0.5em 0;
+				}
+			}
+		}
 
-// 			&-animation {
-// 				text-align: right;
-// 				line-height: 1.5em;
-// 				margin-top: 2em;
-// 				color: $dark-white;
+		&__skills {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 
-// 				& span {
-// 					text-transform: uppercase;
-// 					font-weight: bold;
-// 				}
+			&-title {
+				color: $main-yellow;
+				text-align: center;
+				padding-bottom: 1em;
+				grid-column: 1/5;
+				grid-row: 1;
+				font-size: 2.6rem;
+			}
 
-// 				& .personal-animation--active {
-// 					color: $dirty-white;
-// 					font-size: 2.6rem;
-// 					padding: 0.5em 0;
+			&-icons {
+				text-align: center;
+				display: grid;
+				grid-template-columns: repeat(4, 3fr);
+				gap: 1.5em;
 
-// 					& span {
-// 						color: $main-yellow;
-// 					}
-// 				}
-// 			}
-// 		}
+				& .fa-brands {
+					font-size: 6rem;
+				}
 
-// 		&__skills {
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-between;
+				& .icon-name {
+					text-transform: uppercase;
+				}
+			}
 
-// 			&-title {
-// 				color: $main-yellow;
-// 				text-align: center;
-// 				padding-bottom: 1em;
-// 				grid-column: 1/5;
-// 				grid-row: 1;
-// 				font-size: 2.6rem;
-// 			}
+			&-watch-projects {
+				margin: 0 auto;
+				padding-top: 2em;
+				text-align: center;
 
-// 			&-icons {
-// 				text-align: center;
-// 				display: grid;
-// 				grid-template-columns: repeat(4, 3fr);
-// 				gap: 1.5em;
+				& .watch-projects {
+					font-size: 2.6rem;
+				}
 
-// 				& .fa-brands {
-// 					font-size: 6rem;
-// 				}
-
-// 				& .icon-name {
-// 					text-transform: uppercase;
-// 				}
-// 			}
-
-// 			&-watch-projects {
-// 				margin: 0 auto;
-// 				padding-top: 2em;
-// 				text-align: center;
-
-// 				& .watch-projects {
-// 					font-size: 2.6rem;
-// 				}
-
-// 				& .fa-chevron-down {
-// 					font-size: 4rem;
-// 					padding: 0.3em;
-// 					cursor: pointer;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				& .fa-chevron-down {
+					font-size: 4rem;
+					padding: 0.3em;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
