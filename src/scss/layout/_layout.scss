@@ -101,14 +101,16 @@
 		margin-top: 2em;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		// height: 100vh;
+		justify-content: space-around;
+		height: 100vh;
+		min-height: 700px;
 
 		&-title {
 			text-align: center;
 			padding-bottom: 1em;
 			grid-column: 1/3;
 			grid-row: 1;
+			font-size: 2rem;
 		}
 
 		&-icons {
@@ -118,17 +120,25 @@
 			gap: 1.5em;
 
 			& .fa-brands {
-				font-size: 3rem;
+				font-size: 8rem;
 			}
 
 			& .icon-name {
 				text-transform: uppercase;
+
+				&:hover {
+					color: $main-yellow;
+				}
 			}
 		}
 
 		&-watch-projects {
 			margin: 4em auto 2em;
 			text-align: center;
+
+			& .watch-projects {
+				font-size: 2rem;
+			}
 
 			& .fa-chevron-down {
 				font-size: 2rem;

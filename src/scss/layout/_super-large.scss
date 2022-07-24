@@ -66,6 +66,7 @@
 		&__skills {
 			margin-top: 0;
 			padding: 4em 0 4em 1em;
+			justify-content: space-between;
 
 			&-title {
 				visibility: hidden;
@@ -74,7 +75,7 @@
 
 			&-icons {
 				grid-template-columns: repeat(4, 3fr);
-				margin-top: 20em;
+				margin-top: 15em;
 
 				& .fa-brands {
 					font-size: 6rem;
