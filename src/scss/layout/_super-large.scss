@@ -15,8 +15,12 @@
 			}
 
 			&-title {
-				& .header-title {
+				& .header-title-name {
 					font-size: 4rem;
+				}
+
+				& .header-title-dev {
+					font-size: 3rem;
 				}
 			}
 		}
