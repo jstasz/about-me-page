@@ -1,6 +1,8 @@
 @media (min-width: 1200px) {
 	.container {
-		padding: 5em;
+		padding: 3em;
+		height: 100vh;
+		min-height: 1000px;
 	}
 
 	.about-me {
@@ -8,19 +10,26 @@
 
 		&__header {
 			flex-direction: row;
-			margin-bottom: 2em;
 
 			&-photo {
-				margin: 1em 1em 1em 10em;
+				margin: 0;
+				position: absolute;
+				left: 58%;
+				top: 4em;
+
+				&--img {
+					width: 12em;
+					height: 12em;
+				}
 			}
 
 			&-title {
 				& .header-title-name {
-					font-size: 4rem;
+					font-size: 5rem;
 				}
 
 				& .header-title-dev {
-					font-size: 3rem;
+					font-size: 4rem;
 				}
 			}
 		}
@@ -32,68 +41,55 @@
 		&__personal,
 		&__skills {
 			width: 50%;
-			padding: 1em 2em;
+			height: 90vh;
 		}
 
 		&__personal {
+			font-size: 2.4rem;
+			justify-content: space-between;
+			padding: 4em 1em 4em 0;
+
 			&-description {
-				text-align: center;
-				letter-spacing: 0.2em;
+				margin-top: 4em;
 			}
 
 			&-animation {
-				line-height: 1.5em;
-				font-size: 2.2rem;
+				font-size: 2rem;
+				margin: 4em 0 0 0;
 
 				& .personal-animation--active {
-					font-size: 2.6rem;
 					padding: 0.5em 0;
 				}
 			}
 		}
 
 		&__skills {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			margin-top: 0;
+			padding: 4em 0 4em 1em;
 
 			&-title {
-				color: $main-yellow;
-				text-align: center;
-				padding-bottom: 1em;
+				visibility: hidden;
 				grid-column: 1/5;
-				grid-row: 1;
-				font-size: 2.6rem;
 			}
 
 			&-icons {
-				text-align: center;
-				display: grid;
 				grid-template-columns: repeat(4, 3fr);
-				gap: 1.5em;
+				margin-top: 20em;
 
 				& .fa-brands {
 					font-size: 6rem;
 				}
-
-				& .icon-name {
-					text-transform: uppercase;
-				}
 			}
 
 			&-watch-projects {
-				margin: 0 auto;
-				padding-top: 2em;
-				text-align: center;
+				margin: 2em 0 0 0;
 
 				& .watch-projects {
-					font-size: 2.6rem;
+					font-size: 2.4rem;
 				}
 
 				& .fa-chevron-down {
 					font-size: 4rem;
-					padding: 0.3em;
-					cursor: pointer;
 				}
 			}
 		}
