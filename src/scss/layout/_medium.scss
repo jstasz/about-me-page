@@ -1,3 +1,35 @@
-// @media (min-width:768px) {
+@media (min-width: 768px) {
+	.container {
+		padding: 0 3em;
+	}
 
-// }
+	.about-me {
+		&__header {
+			&-title {
+				& .header-title-name {
+					font-size: 4.5rem;
+				}
+
+				& .header-title-dev {
+					font-size: 3.5rem;
+				}
+			}
+		}
+
+		&__personal {
+			font-size: 2.2rem;
+
+			&-animation {
+				font-size: 2rem;
+
+				& .personal-animation--active {
+					padding: 0.4em 0;
+				}
+			}
+		}
+
+		&__skills {
+			font-size: 2.2rem;
+		}
+	}
+}

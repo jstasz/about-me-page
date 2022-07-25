@@ -1,26 +1,8 @@
 @media (min-width: 1200px) {
-	.container {
-		padding: 3em;
-		height: 100vh;
-		min-height: 1000px;
-	}
-
 	.about-me {
-		font-size: 2rem;
-
 		&__header {
-			flex-direction: row;
-
 			&-photo {
-				margin: 0;
-				position: absolute;
-				left: 58%;
-				top: 5em;
-
-				&--img {
-					width: 12em;
-					height: 12em;
-				}
+				top: 4em;
 			}
 
 			&-title {
@@ -34,20 +16,8 @@
 			}
 		}
 
-		&__content {
-			flex-direction: row;
-		}
-
-		&__personal,
-		&__skills {
-			width: 50%;
-			height: 90vh;
-			min-height: 1000px;
-		}
-
 		&__personal {
 			font-size: 2.4rem;
-			justify-content: space-between;
 			padding: 4em 1em 4em 0;
 
 			&-description {
@@ -55,39 +25,21 @@
 			}
 
 			&-animation {
-				font-size: 2rem;
 				margin: 4em 0 0 0;
 
 				& .personal-animation--active {
-					padding: 0.5em 0;
+					font-size: 2.6rem;
 				}
 			}
 		}
 
 		&__skills {
 			padding: 4em 0 4em 1em;
-			justify-content: space-around;
-
-			&-title {
-				display: none;
-			}
+			font-size: 2.4;
 
 			&-icons {
-				grid-template-columns: repeat(4, 2fr);
-				margin-top: 20em;
-				margin-bottom: 5em;
-
 				& .fa-brands {
 					font-size: 6rem;
-				}
-			}
-
-			&-watch-projects {
-				margin-top: 2em;
-				font-size: 2.4rem;
-
-				& .fa-chevron-down {
-					font-size: 4rem;
 				}
 			}
 		}

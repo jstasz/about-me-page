@@ -1,3 +1,59 @@
-// @media (min-width: 576px) {
-//
-// }
+@media (min-width: 576px) {
+	.container {
+		padding: 0 2em;
+	}
+
+	.about-me {
+		font-size: 2rem;
+
+		&__header {
+			&-photo {
+				&--img {
+					width: 12em;
+					height: 12em;
+				}
+			}
+
+			&-title {
+				& .header-title-name {
+					font-size: 4rem;
+				}
+
+				& .header-title-dev {
+					font-size: 3rem;
+				}
+			}
+		}
+
+		&__personal {
+			font-size: 2rem;
+			min-height: 700px;
+
+			&-animation {
+				font-size: 1.8rem;
+
+				& .personal-animation--active {
+					padding: 0.3em 0;
+					font-size: 2rem;
+				}
+			}
+		}
+
+		&__skills {
+			font-size: 2rem;
+
+			&-icons {
+				& .fa-brands {
+					font-size: 8rem;
+				}
+			}
+
+			&-watch-projects {
+				& .fa-chevron-down {
+					padding: 0.5em;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
