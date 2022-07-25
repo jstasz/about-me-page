@@ -29,7 +29,17 @@
 		}
 
 		&__skills {
-			font-size: 2.2rem;
+			font-size: 2.6rem;
+
+			&-icons {
+				& .fa-brands {
+					font-size: 10rem;
+				}
+
+				& .icon-name {
+					font-size: 2rem;
+				}
+			}
 		}
 	}
 }

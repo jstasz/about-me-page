@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
 	.container {
-		padding: 3em;
+		padding: 2em;
 		height: 100vh;
 	}
 
@@ -40,7 +40,7 @@
 
 				& .personal-animation--active {
 					padding: 0.5em 0;
-					font-size: 2.4rem;
+					font-size: 2.3rem;
 				}
 			}
 		}
@@ -55,9 +55,11 @@
 			}
 
 			&-icons {
-				font-size: 1.8rem;
+				display: grid;
 				grid-template-columns: repeat(4, 2fr);
-				margin-top: 12em;
+				gap: 1.5em;
+				font-size: 1.8rem;
+				margin-top: 18em;
 
 				& .fa-brands {
 					font-size: 5rem;

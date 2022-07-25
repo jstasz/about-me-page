@@ -103,35 +103,32 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		height: 100vh;
-		min-height: 700px;
 		font-size: 2rem;
-
-		&-title {
-			text-align: center;
-		}
+		text-align: center;
 
 		&-icons {
-			text-align: center;
 			display: grid;
 			grid-template-columns: repeat(2, 4fr);
 			gap: 1.5em;
+			text-align: center;
+			margin: 5em 0;
+
+			& .skills-icon {
+				padding: 0.5em;
+			}
 
 			& .fa-brands {
-				font-size: 4rem;
-				padding: 0.2em;
+				font-size: 5rem;
 			}
 
 			& .icon-name {
 				text-transform: uppercase;
-
-				&:hover {
-					color: $main-yellow;
-				}
+				font-size: 1rem;
+				padding-top: 0.2em;
 			}
 		}
 
-		&-watch-projects {
+		&- &-watch-projects {
 			text-align: center;
 
 			& .fa-chevron-down {
