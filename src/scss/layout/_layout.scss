@@ -34,7 +34,7 @@
 		align-items: center;
 
 		&-photo {
-			margin: 1em 0;
+			margin: 3em 0;
 
 			&--img {
 				border-radius: 50%;
@@ -98,7 +98,7 @@
 	}
 
 	&__skills {
-		margin-top: 2em;
+		padding: 2em 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -107,16 +107,13 @@
 
 		&-title {
 			text-align: center;
-			padding-bottom: 1em;
-			grid-column: 1/3;
-			grid-row: 1;
 			font-size: 2rem;
 		}
 
 		&-icons {
 			text-align: center;
 			display: grid;
-			grid-template-columns: repeat(2, 5fr);
+			grid-template-columns: repeat(2, 4fr);
 			gap: 1.5em;
 
 			& .fa-brands {
@@ -133,16 +130,11 @@
 		}
 
 		&-watch-projects {
-			margin: 4em auto 2em;
 			text-align: center;
-
-			& .watch-projects {
-				font-size: 2rem;
-			}
+			font-size: 2rem;
 
 			& .fa-chevron-down {
-				font-size: 2rem;
-				padding: 0.3em;
+				padding-top: 0.3em;
 				cursor: pointer;
 
 				&:hover {

@@ -15,7 +15,7 @@
 				margin: 0;
 				position: absolute;
 				left: 58%;
-				top: 4em;
+				top: 5em;
 
 				&--img {
 					width: 12em;
@@ -42,6 +42,7 @@
 		&__skills {
 			width: 50%;
 			height: 90vh;
+			min-height: 1000px;
 		}
 
 		&__personal {
@@ -64,18 +65,17 @@
 		}
 
 		&__skills {
-			margin-top: 0;
 			padding: 4em 0 4em 1em;
-			justify-content: space-between;
+			justify-content: space-around;
 
 			&-title {
-				visibility: hidden;
-				grid-column: 1/5;
+				display: none;
 			}
 
 			&-icons {
-				grid-template-columns: repeat(4, 3fr);
-				margin-top: 15em;
+				grid-template-columns: repeat(4, 2fr);
+				margin-top: 20em;
+				margin-bottom: 5em;
 
 				& .fa-brands {
 					font-size: 6rem;
@@ -83,11 +83,8 @@
 			}
 
 			&-watch-projects {
-				margin: 2em 0 0 0;
-
-				& .watch-projects {
-					font-size: 2.4rem;
-				}
+				margin-top: 2em;
+				font-size: 2.4rem;
 
 				& .fa-chevron-down {
 					font-size: 4rem;
