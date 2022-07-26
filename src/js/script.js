@@ -17,3 +17,22 @@ const handleHover = function (e) {
 
 skillsIcons.addEventListener("mouseover", handleHover.bind(0.3));
 skillsIcons.addEventListener("mouseout", handleHover.bind(1));
+
+// ANIMATION SLIDER FOR PERSONAL
+
+const track = document.querySelector(".about-me__personal-animation");
+const slides = Array.from(track.children);
+const btn = document.querySelector(".fa-chevron-down");
+
+const personalAnimation = function () {
+	const currentSlide = track.querySelector(".personal-animation--active");
+	let nextSlide = currentSlide.nextElementSibling;
+
+	if (!currentSlide.nextElementSibling) nextSlide = slides[0];
+
+	currentSlide.classList.remove("personal-animation--active");
+	nextSlide.classList.add("personal-animation--active");
+	nextSlide = currentSlide;
+};
+
+setInterval(personalAnimation, 1500);
