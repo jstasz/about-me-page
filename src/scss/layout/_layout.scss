@@ -47,10 +47,12 @@
 			& .header-title {
 				letter-spacing: 0.2rem;
 				text-align: center;
+				font-size: 3.5rem;
 
 				&-dev {
 					color: $dirty-white;
 					text-transform: lowercase;
+					font-size: 2.5rem;
 				}
 			}
 		}
@@ -103,15 +105,19 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		text-align: center;
+
+		&-title {
+			color: $main-yellow;
+		}
 
 		&-icons {
 			display: grid;
 			grid-template-columns: repeat(2, 4fr);
 			gap: 1.5em;
 			text-align: center;
-			margin: 5em 0;
+			margin: 2em 0;
 
 			& .skills-icon {
 				padding: 0.5em;
@@ -123,7 +129,7 @@
 
 			& .icon-name {
 				text-transform: uppercase;
-				font-size: 1rem;
+				font-size: 1.5rem;
 				padding-top: 0.2em;
 			}
 		}
