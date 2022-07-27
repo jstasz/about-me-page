@@ -22,7 +22,6 @@ skillsIcons.addEventListener("mouseout", handleHover.bind(1));
 
 const track = document.querySelector(".about-me__personal-animation");
 const slides = Array.from(track.children);
-const btn = document.querySelector(".fa-chevron-down");
 
 const personalAnimation = function () {
 	const currentSlide = track.querySelector(".personal-animation--active");
