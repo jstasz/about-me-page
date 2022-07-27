@@ -3,15 +3,15 @@
 		padding: 0 3em;
 	}
 
+	.section-title {
+		font-size: 3.5rem;
+	}
+
 	.about-me {
 		&__header {
 			&-title {
 				& .header-title-name {
 					font-size: 4.5rem;
-				}
-
-				& .header-title-dev {
-					font-size: 3.5rem;
 				}
 			}
 		}

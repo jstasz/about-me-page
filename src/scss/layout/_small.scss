@@ -3,6 +3,10 @@
 		padding: 0 2em;
 	}
 
+	.section-title {
+		font-size: 3rem;
+	}
+
 	.about-me {
 		font-size: 2rem;
 
@@ -17,10 +21,6 @@
 			&-title {
 				& .header-title-name {
 					font-size: 4rem;
-				}
-
-				& .header-title-dev {
-					font-size: 3rem;
 				}
 			}
 		}
@@ -50,13 +50,16 @@
 					font-size: 2rem;
 				}
 			}
-
-			&-watch-projects {
-				& .fa-chevron-down {
-					padding: 0.5em;
-					cursor: pointer;
-				}
-			}
 		}
 	}
+
+	// .projects {
+
+	// 	&__box {
+
+	// 		& .project {
+
+	// 		}
+	// 	}
+	// }
 }

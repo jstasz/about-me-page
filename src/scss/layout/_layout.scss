@@ -15,12 +15,15 @@
 	display: none;
 }
 
-.title {
+.section-title {
+	font-size: 2.5rem;
 	text-transform: uppercase;
+	text-align: center;
 	background: $main-gold;
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	letter-spacing: 0.2rem;
 }
 
 .about-me {
@@ -45,14 +48,11 @@
 
 		&-title {
 			& .header-title {
-				letter-spacing: 0.2rem;
-				text-align: center;
-				font-size: 3.5rem;
-
+				&-name {
+					font-size: 3.5rem;
+				}
 				&-dev {
-					color: $dirty-white;
 					text-transform: lowercase;
-					font-size: 2.5rem;
 				}
 			}
 		}
@@ -91,7 +91,6 @@
 			& .personal-animation--active {
 				color: $dirty-white;
 				padding: 0.2em 0;
-				// font-size: 1.4rem;
 
 				& span {
 					color: $main-yellow;
@@ -109,7 +108,7 @@
 		text-align: center;
 
 		&-title {
-			color: $main-yellow;
+			font-size: 2.5rem;
 		}
 
 		&-icons {
@@ -134,17 +133,46 @@
 			}
 		}
 
-		&- &-watch-projects {
+		&-watch-projects {
 			text-align: center;
 
 			& .fa-chevron-down {
 				padding: 0.5em;
+				margin-top: 0.5em;
 				cursor: pointer;
+				position: relative;
 
-				&:hover {
-					color: $main-yellow;
+				&::after {
+					content: "";
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					border: 2px solid $dirty-white;
+					border-radius: 50%;
+					animation: pulse 4s infinite;
 				}
 			}
+		}
+	}
+}
+
+.projects {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		& .project-box {
+			border-radius: 30px;
+			border: 2px solid $dirty-white;
+			background-color: black;
+			width: 90%;
+			height: 20em;
+			margin: 3em;
+			padding: 2em;
 		}
 	}
 }

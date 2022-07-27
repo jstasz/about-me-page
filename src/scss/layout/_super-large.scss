@@ -1,13 +1,12 @@
 @media (min-width: 1200px) {
+	.section-title {
+		font-size: 4rem;
+	}
 	.about-me {
 		&__header {
 			&-title {
 				& .header-title-name {
 					font-size: 5rem;
-				}
-
-				& .header-title-dev {
-					font-size: 4rem;
 				}
 			}
 		}
