@@ -1,6 +1,7 @@
 //-----COLORS-----
 // $container-color: rgba(60, 60, 60, 0.7);
-$container-color: rgba(0, 0, 0, 0.6);
+$main-container-color: rgba(0, 0, 0, 0.6);
+$section-container-color: rgba(16, 16, 16, 0.9);
 $dirty-white: rgb(167, 164, 164);
 $dark-white: rgb(80, 79, 79);
 $main-yellow: rgb(207, 179, 117);
@@ -31,6 +32,6 @@ body {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 2rem;
 	background-image: url(../../src/images/stars-g41a1685af_640.png);
-	background-size: cover;
+	background-repeat: repeat;
 	color: $dirty-white;
 }

@@ -1,11 +1,13 @@
 @media (min-width: 992px) {
 	.container {
 		padding: 2em;
-		height: 100vh;
+		height: 90vh;
 		min-height: 1000px;
+		margin: 2em auto;
 	}
 
 	.about-me {
+		height: 100vh;
 		&__header {
 			flex-direction: row;
 
@@ -56,13 +58,17 @@
 
 			&-icons {
 				display: grid;
-				grid-template-columns: repeat(4, 2fr);
+				grid-template-columns: repeat(3, 3fr);
 				gap: 1.5em;
-				font-size: 1.8rem;
+				font-size: 1.4rem;
 				margin-top: 18em;
 
 				& .fa-brands {
 					font-size: 5rem;
+				}
+
+				& .last-icon {
+					display: block;
 				}
 			}
 
