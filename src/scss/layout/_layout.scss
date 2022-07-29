@@ -157,38 +157,45 @@
 }
 
 .projects {
+	margin-top: 2em;
+
 	&__container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin-top: 2em;
+		padding: 0 2em;
 
 		& .project-box {
+			display: flex;
+			flex-direction: column;
 			border-radius: 30px;
 			background-color: $section-container-color;
-			height: 100%;
-			margin: 2em;
 			position: relative;
 			border: 1px solid transparent;
+			width: 100%;
+			margin: 2em 0;
+			overflow: hidden;
 
-			&:hover {
-				background-color: black;
-				border: 1px solid $main-yellow;
-			}
-
-			&::after {
-				@include pulse-element(30px);
-				border: 1px solid $main-yellow;
-				opacity: 0;
-			}
-
-			&:hover::after {
-				animation: pulse 1s 1;
-			}
-
-			& .project-hero-image {
+			&__picture {
 				width: 100%;
+				transition: transform 0.3s;
+				filter: brightness(0.4);
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+
+			&__content {
+				padding: 2em;
+				text-align: center;
+				z-index: 10;
+
+				& .project-title {
+					font-size: 2rem;
+				}
 			}
 		}
 	}
