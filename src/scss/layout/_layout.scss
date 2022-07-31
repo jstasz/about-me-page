@@ -27,8 +27,11 @@
 	letter-spacing: 0.2rem;
 }
 
+.header-title-name {
+	font-size: 3.5rem;
+}
+
 .about-me {
-	font-size: 1.5rem;
 	letter-spacing: 0.2em;
 
 	&__header {
@@ -49,9 +52,6 @@
 
 		&-title {
 			& .header-title {
-				&-name {
-					font-size: 3.5rem;
-				}
 				&-dev {
 					text-transform: lowercase;
 				}
@@ -68,7 +68,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		font-size: 1.4rem;
 		height: 100vh;
 		min-height: 700px;
 
@@ -82,7 +81,6 @@
 			line-height: 1.5em;
 			margin: 2em 0;
 			color: $dark-white;
-			font-size: 1.2rem;
 
 			& span {
 				text-transform: uppercase;
@@ -108,9 +106,9 @@
 		font-size: 2.5rem;
 		text-align: center;
 
-		&-title {
-			font-size: 2.5rem;
-		}
+		// &-title {
+		// 	font-size: 2.5rem;
+		// }
 
 		&-icons {
 			display: grid;
@@ -177,24 +175,45 @@
 			width: 100%;
 			margin: 2em 0;
 			overflow: hidden;
+			position: relative;
 
 			&__picture {
 				width: 100%;
 				transition: transform 0.3s;
 				filter: brightness(0.4);
+			}
 
-				&:hover {
-					transform: scale(1.1);
-				}
+			&:hover .project-box__picture {
+				transform: scale(1.1);
 			}
 
 			&__content {
 				padding: 2em;
 				text-align: center;
 				z-index: 10;
+				margin: auto 0;
 
 				& .project-title {
 					font-size: 2rem;
+					padding: 1em 0;
+					text-transform: lowercase;
+				}
+
+				& .git-link {
+					text-decoration: none;
+					color: $dark-white;
+
+					&:hover {
+						color: $dirty-white;
+					}
+				}
+
+				& .fa-github-square {
+					font-size: 3rem;
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 0.5em;
 				}
 			}
 		}

@@ -1,37 +1,27 @@
 @media (min-width: 576px) {
+	body {
+		font-size: 1.7rem;
+	}
+
 	.container {
 		padding: 0 2em;
 	}
 
 	.section-title {
-		font-size: 3rem;
+		font-size: 2.8rem;
+	}
+
+	.header-title-name {
+		font-size: 3.8rem;
 	}
 
 	.about-me {
-		font-size: 2rem;
-
-		&__header {
-			&-photo {
-				&--img {
-					width: 12em;
-					height: 12em;
-				}
-			}
-
-			&-title {
-				& .header-title-name {
-					font-size: 4rem;
-				}
-			}
+		&__header-photo--img {
+			width: 12em;
+			height: 12em;
 		}
-
 		&__personal {
-			font-size: 2rem;
-			min-height: 700px;
-
 			&-animation {
-				font-size: 1.8rem;
-
 				& .personal-animation--active {
 					padding: 0.3em 0;
 				}
@@ -39,8 +29,6 @@
 		}
 
 		&__skills {
-			font-size: 3rem;
-
 			&-icons {
 				& .fa-brands {
 					font-size: 8rem;
@@ -53,13 +41,19 @@
 		}
 	}
 
-	// .projects {
+	.projects {
+		&__container {
+			padding: 0 5em;
 
-	// 	&__box {
+			& .project-box {
+				& .project-title {
+					font-size: 2.5rem;
+				}
 
-	// 		& .project {
-
-	// 		}
-	// 	}
-	// }
+				& .fa-github-square {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
 }

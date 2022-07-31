@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+	body {
+		font-size: 2.2rem;
+	}
+
 	.container {
 		padding: 0 3em;
 	}
@@ -7,21 +11,15 @@
 		font-size: 3.5rem;
 	}
 
-	.about-me {
-		&__header {
-			&-title {
-				& .header-title-name {
-					font-size: 4.5rem;
-				}
-			}
-		}
+	.header-title-name {
+		font-size: 4rem;
+	}
 
+	.about-me {
 		&__personal {
-			font-size: 2.2rem;
+			min-height: 1000px;
 
 			&-animation {
-				font-size: 2rem;
-
 				& .personal-animation--active {
 					padding: 0.4em 0;
 				}
@@ -29,8 +27,6 @@
 		}
 
 		&__skills {
-			font-size: 3.5rem;
-
 			&-icons {
 				margin: 3em 0;
 
@@ -48,12 +44,16 @@
 
 			&__picture {
 				width: 50%;
-				height: auto;
 			}
 
 			&--right {
 				& .project-box__content {
 					order: -1;
+				}
+
+				& .fa-github-square {
+					left: -100%;
+					transform: translateX(40px);
 				}
 			}
 		}
