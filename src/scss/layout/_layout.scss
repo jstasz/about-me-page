@@ -215,5 +215,29 @@
 }
 
 .contact {
-	margin-top: 2em;
+	margin-top: 3em;
+	text-align: center;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		padding: 2em 0 4em 0;
+	}
+
+	&__item {
+		padding: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__icon {
+		padding: 0.2em;
+		font-size: 3rem;
+		color: $dark-white;
+	}
+
+	&__text {
+		padding-left: 1em;
+	}
 }
