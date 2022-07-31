@@ -25,10 +25,20 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: 0.2rem;
+	padding: 0.2em;
 }
 
 .header-title-name {
 	font-size: 3.5rem;
+}
+
+.section-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	padding: 0 2em;
 }
 
 .about-me {
@@ -106,10 +116,6 @@
 		font-size: 2.5rem;
 		text-align: center;
 
-		// &-title {
-		// 	font-size: 2.5rem;
-		// }
-
 		&-icons {
 			display: grid;
 			grid-template-columns: repeat(2, 4fr);
@@ -141,7 +147,6 @@
 
 			& .fa-chevron-down {
 				padding: 0.5em;
-				margin-top: 0.5em;
 				cursor: pointer;
 				position: relative;
 
@@ -155,67 +160,60 @@
 }
 
 .projects {
-	margin-top: 2em;
-
-	&__container {
+	& .project-box {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-top: 2em;
-		padding: 0 2em;
+		border-radius: 30px;
+		background-color: $section-container-color;
+		position: relative;
+		border: 1px solid transparent;
+		width: 100%;
+		margin: 2em 0;
+		overflow: hidden;
+		position: relative;
 
-		& .project-box {
-			display: flex;
-			flex-direction: column;
-			border-radius: 30px;
-			background-color: $section-container-color;
-			position: relative;
-			border: 1px solid transparent;
+		&__picture {
 			width: 100%;
-			margin: 2em 0;
-			overflow: hidden;
-			position: relative;
+			transition: transform 0.3s;
+			filter: brightness(0.4);
+		}
 
-			&__picture {
-				width: 100%;
-				transition: transform 0.3s;
-				filter: brightness(0.4);
+		&:hover .project-box__picture {
+			transform: scale(1.1);
+		}
+
+		&__content {
+			padding: 2em;
+			text-align: center;
+			z-index: 10;
+			margin: auto 0;
+
+			& .project-title {
+				font-size: 2rem;
+				padding: 1em 0;
+				text-transform: lowercase;
 			}
 
-			&:hover .project-box__picture {
-				transform: scale(1.1);
+			& .git-link {
+				text-decoration: none;
+				color: $dark-white;
+
+				&:hover {
+					color: $dirty-white;
+				}
 			}
 
-			&__content {
-				padding: 2em;
-				text-align: center;
-				z-index: 10;
-				margin: auto 0;
-
-				& .project-title {
-					font-size: 2rem;
-					padding: 1em 0;
-					text-transform: lowercase;
-				}
-
-				& .git-link {
-					text-decoration: none;
-					color: $dark-white;
-
-					&:hover {
-						color: $dirty-white;
-					}
-				}
-
-				& .fa-github-square {
-					font-size: 3rem;
-					position: absolute;
-					top: 0;
-					right: 0;
-					padding: 0.5em;
-				}
+			& .fa-github-square {
+				font-size: 3rem;
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0.5em;
 			}
 		}
 	}
+}
+
+.contact {
+	margin-top: 2em;
 }

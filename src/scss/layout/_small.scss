@@ -15,11 +15,16 @@
 		font-size: 3.8rem;
 	}
 
+	.section-container {
+		padding: 0 5em;
+	}
+
 	.about-me {
 		&__header-photo--img {
 			width: 12em;
 			height: 12em;
 		}
+
 		&__personal {
 			&-animation {
 				& .personal-animation--active {
@@ -42,9 +47,7 @@
 	}
 
 	.projects {
-		&__container {
-			padding: 0 5em;
-
+		.section-container {
 			& .project-box {
 				& .project-title {
 					font-size: 2.5rem;
