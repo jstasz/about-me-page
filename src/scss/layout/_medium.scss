@@ -66,7 +66,13 @@
 
 		&__form {
 			& .contact-input {
-				font-size: 2rem;
+				font-size: 1.8rem;
+			}
+
+			& .form__btn {
+				& .contact-btn {
+					font-size: 1.8rem;
+				}
 			}
 		}
 	}

@@ -41,6 +41,23 @@
 	padding: 0 2em;
 }
 
+.button {
+	padding: 1em;
+	width: 40%;
+	background-color: $btn-color;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	color: $dark-grey;
+	font-size: 1.8rem;
+	border: 1px solid black;
+	text-transform: uppercase;
+
+	&:focus {
+		outline: transparent;
+	}
+}
+
 .about-me {
 	letter-spacing: 0.2em;
 
@@ -250,11 +267,23 @@
 			font-size: 1.4rem;
 			color: $dark-white;
 			border-radius: 10px;
+
+			&:focus {
+				outline: transparent;
+			}
 		}
 
 		& .contact-textarea {
 			min-height: 200px;
 			resize: none;
+		}
+
+		& .form__btn {
+			margin: 0.5em;
+
+			& .contact-btn {
+				font-size: 1.4rem;
+			}
 		}
 	}
 }
