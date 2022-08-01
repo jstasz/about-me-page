@@ -44,17 +44,27 @@
 .button {
 	padding: 1em;
 	width: 40%;
-	background-color: $btn-color;
+	background: $btn-color;
 	border-radius: 10px;
-	font-weight: bold;
 	cursor: pointer;
-	color: $dark-grey;
-	font-size: 1.8rem;
-	border: 1px solid black;
+	color: $main-yellow;
+	border-width: thin;
+	border: 1px solid $dark-white;
 	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	letter-spacing: 0.2em;
 
 	&:focus {
 		outline: transparent;
+	}
+
+	&::before {
+		@include glass-element;
+	}
+
+	&:hover::before {
+		animation: glass 0.6s;
 	}
 }
 
