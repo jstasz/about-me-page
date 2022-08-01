@@ -58,4 +58,16 @@
 			}
 		}
 	}
+
+	.contact {
+		&__box {
+			width: 70%;
+		}
+
+		&__form {
+			& .contact-input {
+				font-size: 2rem;
+			}
+		}
+	}
 }

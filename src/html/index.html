@@ -154,19 +154,29 @@
 			<div class="section-container contact__container wrapper">
 			<h2 class="contact__title section-title">contact</h2>
 			<div class="contact__box">
-				<div class="contact__item">
-					<i class="contact__icon fa-solid fa-phone"></i>
-					<p class="contact__text phone">+48 000 000 000</p>
+				<form class="contact__form" id="contactForm">
+					<div>
+						<label for="field-name"></label>
+						<input class="contact-input" type="text" name="name" placeholder="name"">
+					</div>
+					<div>
+						<label for="field-email"></label>
+						<input class="contact-input" type="email" name="email" placeholder="e-mail">
+					</div>
+					<div>
+						<label for="field-message"></label>
+						<textarea class="contact-input contact-textarea" name="message" placeholder="message"></textarea>
+					</div>
+					<div class="contact-btn">
+						<button type="submit" class="form__submit">
+							Wyślij
+						</button>
+					</div>
+				</form>
+				<div class="contact__phone">
+					<i class="contact__phone--icon fa-solid fa-phone"></i>
+					<p class="contact__phone--text phone">+48 000 000 000</p>
 				</div>
-				<div class="contact__item">
-					<i class="contact__icon fa-solid fa-at"></i>
-					<p class="contact__text mail">xxxxxx@gmail.com</p>
-
-				</div>
-				<!-- <div class="contact__item">
-					<i class="contact__icon fa-brands fa-linkedin-in"></i>
-					<p class="contact__text linkedin">Justyna Szajuk</p>
-				</div> -->
 			</div>
 		</div>
 		</section>

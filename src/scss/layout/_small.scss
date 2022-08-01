@@ -59,38 +59,4 @@
 			}
 		}
 	}
-
-	.contact {
-		&__box {
-			width: 100%;
-			flex-direction: row;
-			justify-content: center;
-		}
-
-		&__item {
-			flex-direction: column;
-		}
-
-		&__icon {
-			font-size: 4rem;
-		}
-	}
-
-	.contact {
-		&__box {
-			width: 100%;
-			flex-direction: row;
-			justify-content: center;
-		}
-
-		&__item {
-			padding: 2em;
-			flex-direction: column;
-		}
-
-		&__icon {
-			padding-bottom: 0.5em;
-			font-size: 4rem;
-		}
-	}
 }
