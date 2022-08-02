@@ -1,3 +1,45 @@
+.nav {
+	background-color: rgb(28, 28, 28);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 100;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__link {
+		color: $dark-white;
+		text-decoration: none;
+		font-size: 2rem;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		line-height: 100px;
+		text-transform: uppercase;
+		border: thin solid rgb(15, 15, 15);
+		letter-spacing: 0.2rem;
+		text-shadow: 8px -3px 8px rgb(15, 15, 15);
+
+		&--active {
+			box-shadow: 2px 2px 0 0 rgba(128, 128, 128, 0.8),
+				inset 11px 6px 14px rgba(0, 0, 0, 0.6);
+			color: $main-yellow;
+		}
+	}
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	background-color: $dark-white;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
@@ -105,8 +147,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		height: 100vh;
-		min-height: 700px;
+		height: 95vh;
+		min-height: 630px;
 
 		&-description {
 			text-align: center;

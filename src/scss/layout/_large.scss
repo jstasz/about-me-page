@@ -1,4 +1,36 @@
 @media (min-width: 992px) {
+	.nav {
+		height: 70px;
+		background-color: rgb(5, 5, 5);
+
+		&__container {
+			width: 50%;
+			flex-direction: row;
+			margin: 0 auto;
+		}
+
+		&__link {
+			width: 60vw;
+			max-width: 1400px;
+			height: 70px;
+			line-height: 70px;
+			border: none;
+
+			&--active {
+				box-shadow: 1px 1px 0 0 rgba(50, 50, 50, 0.8),
+					inset 11px 6px 14px rgba(71, 71, 71, 0.6);
+			}
+
+			&:hover {
+				color: $main-yellow;
+			}
+		}
+	}
+
+	.hamburger {
+		display: none;
+	}
+
 	.container {
 		padding: 2em;
 		height: 90vh;
