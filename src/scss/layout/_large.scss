@@ -1,16 +1,24 @@
 @media (min-width: 992px) {
 	.nav {
 		height: 70px;
-		background-color: rgb(5, 5, 5);
+		background-color: transparent;
+
+		&--dark {
+			background-color: rgb(5, 5, 5);
+		}
 
 		&__container {
 			width: 50%;
 			flex-direction: row;
 			margin: 0 auto;
+			background-color: transparent;
+			transform: translateX(0);
 		}
 
 		&__link {
-			width: 60vw;
+			font-size: 2rem;
+
+			width: 70vw;
 			max-width: 1400px;
 			height: 70px;
 			line-height: 70px;

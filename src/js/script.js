@@ -35,3 +35,38 @@ const personalAnimation = function () {
 };
 
 setInterval(personalAnimation, 1500);
+
+// NAV HAMBURGER
+
+const navBtn = document.querySelector(".hamburger");
+const navContainer = document.querySelector(".nav__container");
+const navLinks = document.querySelectorAll(".nav__link");
+
+const navActive = () => {
+	navBtn.classList.toggle("is-active");
+	navContainer.classList.toggle("nav__container--active");
+
+	navLinks.forEach((item) => {
+		item.addEventListener("click", () => {
+			navContainer.classList.remove("nav__container--active");
+			navBtn.classList.remove("is-active");
+		});
+	});
+};
+
+navBtn.addEventListener("click", navActive);
+
+// NAV CHANGE COLOR
+
+const nav = document.querySelector(".nav");
+const navHeight = nav.offsetHeight;
+
+const handleObserver = () => {
+	const navScroll = window.scrollY;
+
+	navScroll > navHeight
+		? nav.classList.add("nav--dark")
+		: nav.classList.remove("nav--dark");
+};
+
+window.addEventListener("scroll", handleObserver);

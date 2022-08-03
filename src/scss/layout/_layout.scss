@@ -1,16 +1,22 @@
 .nav {
-	background-color: rgb(28, 28, 28);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 400px;
-	z-index: 100;
+	z-index: 10;
 
 	&__container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		transform: translateX(-102%);
+		transition: transform 0.3s;
+		background-color: rgb(28, 28, 28);
+
+		&--active {
+			transform: translateX(0);
+		}
 	}
 
 	&__link {
@@ -34,10 +40,15 @@
 	}
 }
 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-	background-color: $dark-white;
+.hamburger {
+	position: fixed;
+	z-index: 10;
+
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: $dark-white;
+	}
 }
 
 .container {
@@ -144,11 +155,12 @@
 	}
 
 	&__personal {
+		padding-top: 2em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		height: 95vh;
-		min-height: 630px;
+		min-height: 720px;
 
 		&-description {
 			text-align: center;
@@ -254,7 +266,7 @@
 		&__content {
 			padding: 2em;
 			text-align: center;
-			z-index: 10;
+			z-index: 1;
 			margin: auto 0;
 
 			& .project-title {
