@@ -3,49 +3,50 @@
 		font-size: 1.7rem;
 	}
 
-	.container {
-		padding: 0 2em;
-	}
+	// .container {
+	// 	padding: 0 2em;
+	// }
 
 	.section-title {
 		font-size: 2.8rem;
 	}
 
-	.header-title-name {
-		font-size: 3.8rem;
-	}
+	// .header-title-name {
+	// 	font-size: 3.8rem;
+	// }
 
 	.section-container {
 		padding: 0 5em;
+		padding-top: 2em;
 	}
 
-	.about-me {
-		&__header-photo--img {
-			width: 12em;
-			height: 12em;
-		}
+	// .about-me {
+	// 	&__header-photo--img {
+	// 		width: 12em;
+	// 		height: 12em;
+	// 	}
 
-		&__personal {
-			min-height: 850px;
-			&-animation {
-				& .personal-animation--active {
-					padding: 0.3em 0;
-				}
-			}
-		}
+	// 	&__personal {
+	// 		min-height: 850px;
+	// 		&-animation {
+	// 			& .personal-animation--active {
+	// 				padding: 0.3em 0;
+	// 			}
+	// 		}
+	// 	}
 
-		&__skills {
-			&-icons {
-				& .fa-brands {
-					font-size: 8rem;
-				}
+	// 	&__skills {
+	// 		&-icons {
+	// 			& .fa-brands {
+	// 				font-size: 8rem;
+	// 			}
 
-				& .icon-name {
-					font-size: 2rem;
-				}
-			}
-		}
-	}
+	// 			& .icon-name {
+	// 				font-size: 2rem;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.projects {
 		.section-container {

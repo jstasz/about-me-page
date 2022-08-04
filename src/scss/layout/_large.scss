@@ -17,20 +17,20 @@
 
 		&__link {
 			font-size: 2rem;
-
-			width: 70vw;
-			max-width: 1400px;
 			height: 70px;
 			line-height: 70px;
 			border: none;
 
 			&--active {
-				box-shadow: 1px 1px 0 0 rgba(50, 50, 50, 0.8),
-					inset 11px 6px 14px rgba(71, 71, 71, 0.6);
+				box-shadow: none;
 			}
 
 			&:hover {
 				color: $main-yellow;
+			}
+
+			&--skills {
+				display: none;
 			}
 		}
 	}
@@ -39,90 +39,90 @@
 		display: none;
 	}
 
-	.container {
-		padding: 2em;
-		height: 90vh;
-		min-height: 1000px;
-		margin: 2em auto;
+	// .container {
+	// 	padding: 2em;
+	// 	height: 90vh;
+	// 	min-height: 1000px;
+	// 	margin: 2em auto;
+	// }
+
+	.section-container {
+		padding-top: 3em;
 	}
 
-	.about-me {
-		height: 100vh;
-		min-height: 1000px;
+	// .about-me {
+	// 	height: 100vh;
+	// 	min-height: 1000px;
 
-		&__header {
-			flex-direction: row;
+	// 	&__header {
+	// 		flex-direction: row;
 
-			&-photo {
-				margin: 0;
-				position: absolute;
-				left: 58%;
-				top: 5em;
-			}
-		}
+	// 		&-photo {
+	// 			margin: 0;
+	// 			position: absolute;
+	// 			left: 58%;
+	// 			top: 5em;
+	// 		}
+	// 	}
 
-		&__content {
-			flex-direction: row;
-		}
+		// &__content {
+		// 	flex-direction: row;
+		// }
 
-		&__personal,
-		&__skills {
-			width: 50%;
-			height: 90vh;
-		}
+		// &__personal,
+		// &__skills {
+		// 	width: 50%;
+		// 	height: 90vh;
+		// }
 
-		&__personal {
-			justify-content: space-between;
-			padding: 5em 1em 5em 0;
+		// &__personal {
+		// 	justify-content: space-between;
+		// 	padding: 2em 1em 2em 0;
 
-			&-description {
-				margin-top: 2em;
-			}
+		// 	&-animation {
+		// 		margin: 1em 0 0 0;
 
-			&-animation {
-				margin: 2em 0 0 0;
+		// 		& .personal-animation--active {
+		// 			padding: 0.5em 0;
+		// 		}
+		// 	}
+		// }
 
-				& .personal-animation--active {
-					padding: 0.5em 0;
-				}
-			}
-		}
+	// 	&__skills {
+	// 		padding: 2em 0 2em 1em;
+	// 		justify-content: space-between;
 
-		&__skills {
-			padding: 5em 0 5em 1em;
-			justify-content: space-between;
+	// 		&-title {
+	// 			visibility: hidden;
+	// 		}
 
-			&-title {
-				visibility: hidden;
-			}
+	// 		&-icons {
+	// 			display: grid;
+	// 			grid-template-columns: repeat(3, 3fr);
+	// 			gap: 1.5em;
+	// 			font-size: 1.4rem;
+	// 			margin-top: 18em;
 
-			&-icons {
-				display: grid;
-				grid-template-columns: repeat(3, 3fr);
-				gap: 1.5em;
-				font-size: 1.4rem;
-				margin-top: 18em;
+	// 			& .fa-brands {
+	// 				font-size: 5rem;
+	// 			}
 
-				& .fa-brands {
-					font-size: 5rem;
-				}
+	// 			& .last-icon {
+	// 				display: block;
+	// 			}
+	// 		}
 
-				& .last-icon {
-					display: block;
-				}
-			}
+	// 		&-watch-projects {
+	// 			margin-top: 2em;
+	// 			font-size: 2.4rem;
 
-			&-watch-projects {
-				margin-top: 2em;
-				font-size: 2.4rem;
-
-				& .fa-chevron-down {
-					font-size: 4rem;
-					margin-top: 0;
-				}
-			}
-		}
-	}
+	// 			& .fa-chevron-down {
+	// 				font-size: 4rem;
+	// 				margin-top: 0;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.contact {
 		&__box {

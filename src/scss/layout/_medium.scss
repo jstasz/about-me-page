@@ -9,39 +9,39 @@
 		}
 	}
 
-	.container {
-		padding: 2em;
-	}
+	// .container {
+	// 	padding: 2em;
+	// }
 
 	.section-title {
 		font-size: 3.5rem;
 	}
 
-	.header-title-name {
-		font-size: 4rem;
-	}
+	// .header-title-name {
+	// 	font-size: 4rem;
+	// }
 
-	.about-me {
-		&__personal {
-			min-height: 1000px;
+	// .about-me {
+	// 	&__personal {
+	// 		min-height: 1000px;
 
-			&-animation {
-				& .personal-animation--active {
-					padding: 0.4em 0;
-				}
-			}
-		}
+	// 		&-animation {
+	// 			& .personal-animation--active {
+	// 				padding: 0.4em 0;
+	// 			}
+	// 		}
+	// 	}
 
-		&__skills {
-			&-icons {
-				margin: 3em 0;
+	// 	&__skills {
+	// 		&-icons {
+	// 			margin: 3em 0;
 
-				& .fa-brands {
-					font-size: 10rem;
-				}
-			}
-		}
-	}
+	// 			& .fa-brands {
+	// 				font-size: 10rem;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.projects {
 		& .project-box {

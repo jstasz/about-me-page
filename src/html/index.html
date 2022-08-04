@@ -29,104 +29,93 @@
 					</span>
 				</button>
 				<div class="nav__container">
-					<a class="nav__link " href="#about-me">o mnie</a>
-					<a class="nav__link" href="#skills">umiejętności</a>
+					<a class="nav__link" href="#about-me">o mnie</a>
+					<a class="nav__link nav__link--skills" href="#skills">umiejętności</a>
 					<a class="nav__link" href="#projects">projekty</a>
 					<a class="nav__link" href="#contact">kontakt</a>
 				</div>
 			</nav>
 		</header>
 		<section id="about-me" class="about-me">
-			<div class="container wrapper">
-				<div class="about-me__content">
-					<div class="about-me__personal">
-						<div class="about-me__header">
-							<div class="about-me__header-title">
-								<h1 class="header-title header-title-name section-title">Justyna Szajuk</h1>
-								<h2 class="header-title header-title-dev section-title">frontend developer</h2>
-							</div>
-							<div class="about-me__header-photo">
-								<img
-									class="about-me__header-photo--img"
-									src="../images/my-photo.png"
-									alt="my photo"
-								/>
-							</div>
-						</div>
-						<div class="about-me__personal-description">
-							<p>Jestem pasjonatem tworzenia stron internetowych i szukam
-								doświadczenia zawodowego jako Junior Frontend Developer. Obecnie z
-								dużym zaangażowaniem rozwijam się w tym kierunku budując nowe
-								projekty. Podnoszę też swoje kwalifikacje poprzez różnego rodzaju kursy
-								tematyczne. Moją mocną stroną jest przede wszystkim kreatywność, a
-								także dbałość o szczegóły i silne nastawienie na zdobywanie nowych
-								umiejętności. Poszukuję stanowiska juniorskiego, na którym
-								wykorzystam zdobytą wiedzę i zyskam możliwość dalszego rozwoju.
-							</p>
-						</div>
-						
-						<div class="about-me__personal-animation">
-							<p class="personal-animation">magister <span>kryminologii</span></p>
-							<p class="personal-animation">7 lat <span>doświadczenia </span>w bankowości</span></p>
-							<p class="personal-animation personal-animation--active">
-								tytuł <span>mistrza świata</span> Taekwondo</span>
-							</p>
-							<p class="personal-animation">zafascynowana <span>programowaniem</span></p>
-							<p class="personal-animation">miłośnik <span>tortów </span>artystycznnych</p>
-						</div>
-					</div>
-					<div id="skills" class="about-me__skills">
-						<h2 class="about-me__skills-title section-title">skills</h2>
-						<div class="about-me__skills-icons">
-							<div class="skills-icon">
-								<i class="fa-brands fa-html5"></i>
-								<p class="icon-name">html</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-css3-alt"></i>
-								<p class="icon-name">css</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-sass"></i>
-								<p class="icon-name">sass</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-npm"></i>
-								<p class="icon-name">npm</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-git-alt"></i>
-								<p class="icon-name">GIT</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-github-square"></i>
-								<p class="icon-name">gitHub</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-js-square"></i>
-								<p class="icon-name">javaScript</p>
-							</div>
-							<div class="skills-icon">
-								<i class="fa-brands fa-angular"></i>
-								<p class="icon-name">angular</p>
-							</div>
-							<div class="skills-icon last-icon">
-								<i class="fa-brands fa-html5"></i>
-								<p class="icon-name">html</p>
-							</div>
-						</div>
-						<div class="about-me__skills-watch-projects">
-							<p class="watch-projects">projekty</p>
-							<i class="fa-solid fa-chevron-down"></i>
-						</div>
-					</div>
+				<div class="about-me__title">
+					<h1 class="about-me__title--name section-title">Justyna Szajuk</h1>
+					<h2 class="about-me__title--dev section-title">frontend developer</h2>
 				</div>
+				<div class="about-me__photo">
+					<img
+						class="about-me__photo--img"
+						src="../images/my-photo.png"
+						alt="my photo"/>
+				</div>
+				<div class="about-me__description">
+					<p>Jestem pasjonatem tworzenia stron internetowych i szukam
+						doświadczenia zawodowego jako Junior Frontend Developer. Obecnie z
+						dużym zaangażowaniem rozwijam się w tym kierunku budując nowe
+						projekty. Podnoszę też swoje kwalifikacje poprzez różnego rodzaju kursy
+						tematyczne. Moją mocną stroną jest przede wszystkim kreatywność, a
+						także dbałość o szczegóły i silne nastawienie na zdobywanie nowych
+						umiejętności. Poszukuję stanowiska juniorskiego, na którym
+						wykorzystam zdobytą wiedzę i zyskam możliwość dalszego rozwoju.
+					</p>
+				</div>
+				<div class="about-me__animations">
+					<p class="about-me__animation about-me__animation--active">magister <span>kryminologii</span></p>
+					<p class="about-me__animation">7 lat <span>doświadczenia </span>w bankowości</span></p>
+					<p class="about-me__animation">
+						tytuł <span>mistrza świata</span> Taekwondo</span>
+					</p>
+					<p class="about-me__animation">zafascynowana <span>programowaniem</span></p>
+					<p class="about-me__animation">miłośnik <span>tortów </span>artystycznnych</p>
+				</div>
+		</section>
+		<section id="skills" class="skills">
+			<h2 class="skills__title section-title">skills</h2>
+			<div class="skills__icons">
+				<div class="skills__icon">
+					<i class="fa-brands fa-html5"></i>
+					<p class="icon-name">html</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-css3-alt"></i>
+					<p class="icon-name">css</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-sass"></i>
+					<p class="icon-name">sass</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-npm"></i>
+					<p class="icon-name">npm</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-git-alt"></i>
+					<p class="icon-name">GIT</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-github-square"></i>
+					<p class="icon-name">gitHub</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-js-square"></i>
+					<p class="icon-name">javaScript</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-angular"></i>
+					<p class="icon-name">angular</p>
+				</div>
+				<div class="skills__icon skills__last-icon">
+					<i class="fa-brands fa-html5"></i>
+					<p class="icon-name">html</p>
+				</div>
+			</div>
+			<div class="skills__watch-projects">
+				<p class="watch-projects">projekty</p>
+				<i class="fa-solid fa-chevron-down"></i>
 			</div>
 		</section>
 		<section id="projects" class="projects">
 			<div class="section-container wrapper">
 				<h2 class="projects__title section-title">moje projekty</h2>
-
 				<div class="project-box project-box--left">
 					<img src="../images/my-photo.png" alt="" class="project-box__picture">
 					<div class="project-box__content">
@@ -181,7 +170,6 @@
 					<p class="contact__phone--text phone">+48 000 000 000</p>
 				</div>
 			</div>
-		</div>
 		</section>
 		<footer class="footer">
 			<div class="section-container footer__container">
@@ -192,6 +180,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<script src="../js/script.js"></script>
 	</body>
 </html>

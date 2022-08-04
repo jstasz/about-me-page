@@ -3,34 +3,31 @@
 		font-size: 4rem;
 	}
 
-	.header-title-name {
-		font-size: 5rem;
-	}
+	// .header-title-name {
+	// 	font-size: 5rem;
+	// }
 
-	.about-me {
-		&__personal {
-			padding: 4em 1em 4em 0;
-			min-height: 1000px;
+	// .about-me {
+	// 	&__personal {
+	// 		min-height: 1000px;
 
-			&-description {
-				margin-top: 4em;
-			}
+	// 		// &-description {
+	// 		// 	margin-top: 4em;
+	// 		// }
 
-			&-animation {
-				margin: 4em 0 0 0;
-			}
-		}
+	// 		// &-animation {
+	// 		// 	margin: 4em 0 0 0;
+	// 		// }
+	// 	}
 
-		&__skills {
-			padding: 4em 0 4em 1em;
-
-			&-icons {
-				& .fa-brands {
-					font-size: 6rem;
-				}
-			}
-		}
-	}
+	// 	&__skills {
+	// 		&-icons {
+	// 			& .fa-brands {
+	// 				font-size: 6rem;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.projects {
 		& .project-box {

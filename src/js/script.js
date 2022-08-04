@@ -46,8 +46,8 @@ const navActive = () => {
 	navBtn.classList.toggle("is-active");
 	navContainer.classList.toggle("nav__container--active");
 
-	navLinks.forEach((item) => {
-		item.addEventListener("click", () => {
+	navLinks.forEach((link) => {
+		link.addEventListener("click", () => {
 			navContainer.classList.remove("nav__container--active");
 			navBtn.classList.remove("is-active");
 		});
