@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+	body {
+		font-size: 2rem;
+	}
+
 	.nav {
 		height: 70px;
 		background-color: transparent;
@@ -39,90 +43,73 @@
 		display: none;
 	}
 
-	// .container {
-	// 	padding: 2em;
-	// 	height: 90vh;
-	// 	min-height: 1000px;
-	// 	margin: 2em auto;
-	// }
-
 	.section-container {
 		padding-top: 3em;
 	}
 
-	// .about-me {
-	// 	height: 100vh;
-	// 	min-height: 1000px;
+	.main-section-container {
+		width: 100%;
+		display: flex;
+		height: 90vh;
+		min-height: 1000px;
+		background-color: $main-container-color;
+		margin: 3em auto;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
 
-	// 	&__header {
-	// 		flex-direction: row;
+	.about-me {
+		width: 50%;
+		height: 100%;
 
-	// 		&-photo {
-	// 			margin: 0;
-	// 			position: absolute;
-	// 			left: 58%;
-	// 			top: 5em;
-	// 		}
-	// 	}
+		&__title {
+			margin-top: 5em;
+		}
 
-		// &__content {
-		// 	flex-direction: row;
-		// }
+		&__photo {
+			&--img {
+				position: absolute;
+				width: 12em;
+				height: 12em;
+				top: 10%;
+				right: 20%;
+			}
+		}
+	}
 
-		// &__personal,
-		// &__skills {
-		// 	width: 50%;
-		// 	height: 90vh;
-		// }
+	.skills {
+		margin: 0;
+		width: 50%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 
-		// &__personal {
-		// 	justify-content: space-between;
-		// 	padding: 2em 1em 2em 0;
+		&__title {
+			visibility: hidden;
+		}
 
-		// 	&-animation {
-		// 		margin: 1em 0 0 0;
+		&__icons {
+			padding-top: 12em;
+			grid-template-columns: repeat(3, 3fr);
+		}
 
-		// 		& .personal-animation--active {
-		// 			padding: 0.5em 0;
-		// 		}
-		// 	}
-		// }
+		&__icon {
+			& .fa-brands {
+				font-size: 4rem;
+			}
+		}
 
-	// 	&__skills {
-	// 		padding: 2em 0 2em 1em;
-	// 		justify-content: space-between;
+		&__last-icon {
+			display: block;
+		}
 
-	// 		&-title {
-	// 			visibility: hidden;
-	// 		}
-
-	// 		&-icons {
-	// 			display: grid;
-	// 			grid-template-columns: repeat(3, 3fr);
-	// 			gap: 1.5em;
-	// 			font-size: 1.4rem;
-	// 			margin-top: 18em;
-
-	// 			& .fa-brands {
-	// 				font-size: 5rem;
-	// 			}
-
-	// 			& .last-icon {
-	// 				display: block;
-	// 			}
-	// 		}
-
-	// 		&-watch-projects {
-	// 			margin-top: 2em;
-	// 			font-size: 2.4rem;
-
-	// 			& .fa-chevron-down {
-	// 				font-size: 4rem;
-	// 				margin-top: 0;
-	// 			}
-	// 		}
-	// 	}
-	// }
+		&__watch-projects {
+			padding-top: 0;
+		}
+	}
 
 	.contact {
 		&__box {

@@ -9,39 +9,13 @@
 		}
 	}
 
-	// .container {
-	// 	padding: 2em;
-	// }
-
 	.section-title {
 		font-size: 3.5rem;
 	}
 
-	// .header-title-name {
-	// 	font-size: 4rem;
-	// }
-
-	// .about-me {
-	// 	&__personal {
-	// 		min-height: 1000px;
-
-	// 		&-animation {
-	// 			& .personal-animation--active {
-	// 				padding: 0.4em 0;
-	// 			}
-	// 		}
-	// 	}
-
-	// 	&__skills {
-	// 		&-icons {
-	// 			margin: 3em 0;
-
-	// 			& .fa-brands {
-	// 				font-size: 10rem;
-	// 			}
-	// 		}
-	// 	}
-	// }
+	.about-me {
+		min-height: 1000px;
+	}
 
 	.skills {
 		&__icon {
