@@ -43,6 +43,20 @@
 	// 	}
 	// }
 
+	.skills {
+		&__icon {
+			& .fa-brands {
+				font-size: 7rem;
+			}
+		}
+
+		&__watch-projects {
+			& .fa-chevron-down {
+				font-size: 3rem;
+			}
+		}
+	}
+
 	.projects {
 		& .project-box {
 			flex-direction: row;
