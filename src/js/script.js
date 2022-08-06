@@ -23,21 +23,24 @@ skillsIcons.addEventListener("mouseout", handleHover.bind(1));
 
 // ANIMATION SLIDER FOR PERSONAL
 
-// const track = document.querySelector(".about-me__personal-animation");
-// const slides = Array.from(track.children);
+const animationBox = document.querySelector(".about-me__animations");
+const slides = Array.from(animationBox.children);
 
-// const personalAnimation = function () {
-// 	const currentSlide = track.querySelector(".personal-animation--active");
-// 	let nextSlide = currentSlide.nextElementSibling;
+const personalAnimation = function () {
+	const currentSlide = animationBox.querySelector(
+		".about-me__animation--active"
+	);
 
-// 	if (!currentSlide.nextElementSibling) nextSlide = slides[0];
+	let nextSlide = currentSlide.nextElementSibling;
 
-// 	currentSlide.classList.remove("personal-animation--active");
-// 	nextSlide.classList.add("personal-animation--active");
-// 	nextSlide = currentSlide;
-// };
+	if (!currentSlide.nextElementSibling) nextSlide = slides[0];
 
-// setInterval(personalAnimation, 1500);
+	currentSlide.classList.remove("about-me__animation--active");
+	nextSlide.classList.add("about-me__animation--active");
+	nextSlide = currentSlide;
+};
+
+setInterval(personalAnimation, 1500);
 
 // NAV HAMBURGER
 
