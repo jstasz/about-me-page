@@ -92,7 +92,7 @@
 }
 
 .wrapper {
-	max-width: 1400px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -110,7 +110,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: 0.2rem;
-	padding: 0.2em;
+	// padding: 0.2em;
 }
 
 .section-container {
@@ -175,6 +175,10 @@
 
 		&--dev {
 			text-transform: lowercase;
+
+			&::first-letter {
+				text-transform: uppercase;
+			}
 		}
 	}
 
@@ -226,7 +230,7 @@
 	&__icons {
 		display: grid;
 		grid-template-columns: repeat(2, 4fr);
-		gap: 1.5em;
+		gap: 1.2em;
 		text-align: center;
 		margin: 3em 0;
 		background-color: $main-container-color;
@@ -251,9 +255,7 @@
 
 	&__watch-projects {
 		padding-top: 2em;
-
 		text-align: center;
-		// font-size: 1.6rem;
 
 		& .fa-chevron-down {
 			padding: 0.5em;
