@@ -23,6 +23,41 @@ skillsIcons.addEventListener("mouseout", handleHover.bind(1));
 
 // ANIMATION SLIDER FOR PERSONAL
 
+// const animationBox = document.querySelector(".about-me__animations");
+// const slides = Array.from(animationBox.children);
+// const btn = document.querySelector(".fa-chevron-down");
+// let a = 1;
+
+// const personalAnimation = function () {
+// 	let lastSlide = document.querySelector(".about-me__animation--last");
+
+// 	let newLastSlide = lastSlide.previousElementSibling;
+
+// 	// slides.forEach((slide) =>
+// 	// 	slide.classList.contains(`about-me__animation--last`)
+// 	// 		? ""
+// 	// 		: (slide.style.transform = `translateY(${i * 100}%)`)
+// 	// );
+
+// 	for (let i = 0; i < slides.length; i++) {
+// 		if (slides[i].classList.contains(`about-me__animation--last`)) {
+// 			slides[i].style.transform = `translateY(-${i * 100}%)`;
+// 		} else {
+// 			slides[i].style.transform = `translateY(${a * 100}%)`;
+// 		}
+// 	}
+
+// 	if (!lastSlide.previousElementSibling) lastSlide = slides[slides.length - 1];
+
+// 	a += 1;
+// 	lastSlide.classList.remove("about-me__animation--last");
+// 	newLastSlide.classList.add("about-me__animation--last");
+
+// 	newLastSlide = lastSlide;
+// };
+
+// btn.addEventListener("click", personalAnimation);
+
 const animationBox = document.querySelector(".about-me__animations");
 const slides = Array.from(animationBox.children);
 

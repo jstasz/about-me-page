@@ -210,7 +210,6 @@
 	}
 
 	&__animation--active {
-		padding: 0.2em 0;
 		opacity: 1;
 
 		& span {
@@ -384,21 +383,17 @@
 .footer {
 	background-color: $section-container-color;
 	color: $dark-white;
-	padding: 1em 0;
+	padding: 2em 0;
 	text-align: center;
 
 	&__icons {
 		text-decoration: none;
-		padding: 1em;
+		padding-top: 1em;
 	}
 
 	&__icon {
 		padding: 0 0.5em;
 		text-decoration: none;
 		color: $dirty-white;
-
-		&:hover {
-			color: $main-yellow;
-		}
 	}
 }
