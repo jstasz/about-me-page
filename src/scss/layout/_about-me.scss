@@ -1,0 +1,89 @@
+.about-me {
+	height: 100vh;
+	min-height: 660px;
+	padding: 2em;
+	@include flex(flex, column, space-around, "");
+	letter-spacing: 0.2em;
+
+	&__title {
+		&--name {
+			font-size: 2.5rem;
+		}
+
+		&--dev {
+			text-transform: lowercase;
+		}
+	}
+
+	&__photo {
+		&--img {
+			display: block;
+			width: 10em;
+			height: 10em;
+			margin: 0 auto;
+			border-radius: 50%;
+			filter: brightness(0.4);
+		}
+	}
+
+	&__description {
+		padding: 1em;
+		text-align: center;
+		background-color: $shadow-container-color;
+	}
+
+	&__animations {
+		text-align: right;
+		line-height: 1.5em;
+	}
+
+	&__animation {
+		color: $dirty-white;
+		opacity: 0.2;
+		text-shadow: 7px -1px 18px rgba(0, 0, 0, 1);
+
+		& span {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+
+	&__animation--active {
+		opacity: 1;
+
+		& span {
+			color: $main-yellow;
+		}
+	}
+}
+
+// SMALL
+
+@media (min-width: 576px) {
+	.about-me {
+		min-height: 800px;
+	}
+}
+
+// MEDIUM
+
+@media (min-width: 768px) {
+	.about-me {
+		width: 50%;
+		height: 100%;
+		min-height: 0;
+		background-color: $shadow-container-color;
+
+		&__photo {
+			&--img {
+				position: absolute;
+				top: 10%;
+				right: 20%;
+			}
+		}
+
+		&__description {
+			padding: 1em 0;
+		}
+	}
+}

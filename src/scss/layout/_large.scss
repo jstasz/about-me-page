@@ -1,7 +1,7 @@
 @media (min-width: 992px) {
-	body {
-		font-size: 1.5rem;
-	}
+	// body {
+	// 	font-size: 1.5rem;
+	// }
 
 	// .nav {
 	// 	width: 100%;
@@ -41,53 +41,53 @@
 	// 	display: none;
 	// }
 
-	.section-container {
-		padding-top: 3em;
-	}
+	// .section-container {
+	// 	padding-top: 3em;
+	// }
 
-	.main-section-container {
-		width: 100%;
-		display: flex;
-		height: 85vh;
-		min-height: 650px;
-		background-color: $main-container-color;
-		margin: 3em auto;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row;
-	}
+	// .main-section-container {
+	// 	width: 100%;
+	// 	display: flex;
+	// 	height: 85vh;
+	// 	min-height: 650px;
+	// 	background-color: $main-container-color;
+	// 	margin: 3em auto;
+	// 	position: relative;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	flex-direction: row;
+	// }
 
 	// .section-title {
 	// 	font-size: 2rem;
 	// }
 
-	.about-me {
-		// display: block;
-		margin: 0;
-		width: 50%;
-		height: 100%;
-		min-height: 0;
-		// justify-content: center;
+	// .about-me {
+	// 	// display: block;
+	// 	margin: 0;
+	// 	width: 50%;
+	// 	height: 100%;
+	// 	min-height: 0;
+	// 	// justify-content: center;
 
-		&__title {
-			margin-top: 3em;
-		}
+	// 	&__title {
+	// 		margin-top: 3em;
+	// 	}
 
-		&__photo {
-			&--img {
-				position: absolute;
-				width: 10em;
-				height: 10em;
-				top: 5%;
-				right: 20%;
-			}
-		}
+	// 	&__photo {
+	// 		&--img {
+	// 			position: absolute;
+	// 			width: 10em;
+	// 			height: 10em;
+	// 			top: 5%;
+	// 			right: 20%;
+	// 		}
+	// 	}
 
-		&__description {
-			margin: 3em 0;
-		}
-	}
+	// 	&__description {
+	// 		margin: 3em 0;
+	// 	}
+	// }
 
 	.skills {
 		margin: 0;
@@ -96,6 +96,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		background-color: $shadow-container-color;
 
 		&__title {
 			visibility: hidden;
@@ -136,3 +137,50 @@
 		}
 	}
 }
+// .skills {
+// 	margin: 0;
+// 	width: 50%;
+// 	height: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-around;
+
+// 	&__title {
+// 		visibility: hidden;
+// 	}
+
+// 	&__icons {
+// 		padding-top: 6em;
+// 		grid-template-columns: repeat(3, 3fr);
+// 	}
+
+// 	&__icon {
+// 		& .fa-brands {
+// 			font-size: 3rem;
+// 		}
+// 		& .icon-name {
+// 			font-size: 1.2rem;
+// 		}
+// 	}
+
+// 	&__last-icon {
+// 		display: block;
+// 	}
+
+// 	&__watch-projects {
+// 		padding-top: 0;
+// 	}
+// }
+
+// .contact {
+// 	&__box {
+// 		width: 50%;
+// 	}
+// }
+
+// .footer {
+// 	&__icon {
+// 		font-size: 2rem;
+// 	}
+// }
+// }

@@ -1,29 +1,25 @@
 @media (min-width: 768px) {
-	body {
-		font-size: 1.6rem;
-	}
-
-	.section-title {
-		font-size: 3.5rem;
-	}
-
-	// .about-me {
-	// 	min-height: 1000px;
+	// body {
+	// 	font-size: 1.6rem;
 	// }
 
-	.skills {
-		&__icon {
-			& .fa-brands {
-				font-size: 7rem;
-			}
-		}
+	// .section-title {
+	// 	font-size: 3.5rem;
+	// }
 
-		&__watch-projects {
-			& .fa-chevron-down {
-				font-size: 3rem;
-			}
-		}
-	}
+	// .skills {
+	// 	&__icon {
+	// 		& .fa-brands {
+	// 			font-size: 7rem;
+	// 		}
+	// 	}
+
+	// 	&__watch-projects {
+	// 		& .fa-chevron-down {
+	// 			font-size: 3rem;
+	// 		}
+	// 	}
+	// }
 
 	.projects {
 		& .project-box {
