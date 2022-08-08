@@ -1,3 +1,15 @@
+@mixin flex($display, $direction, $just-cont, $al-it) {
+	display: $display;
+	flex-direction: $direction;
+	justify-content: $just-cont;
+	align-items: $al-it;
+}
+
+@mixin clicked-div {
+	box-shadow: 2px 2px 0 0 rgba(128, 128, 128, 0.8),
+		inset 11px 6px 14px rgba(0, 0, 0, 0.6);
+}
+
 @mixin pulse-element($radius) {
 	content: "";
 	width: 100%;

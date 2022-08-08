@@ -100,12 +100,13 @@ navBtn.addEventListener("click", navActive);
 // NAV CHANGE COLOR
 
 const nav = document.querySelector(".nav");
-const navHeight = nav.offsetHeight;
+const photo = document.querySelector(".about-me__photo--img");
+const photoTop = photo.offsetTop;
 
 const handleObserver = () => {
 	const navScroll = window.scrollY;
 
-	navScroll > navHeight
+	navScroll > photoTop
 		? nav.classList.add("nav--dark")
 		: nav.classList.remove("nav--dark");
 };
