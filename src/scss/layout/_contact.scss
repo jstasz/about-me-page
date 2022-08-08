@@ -1,0 +1,80 @@
+.contact {
+	margin-top: 3em;
+	text-align: center;
+
+	&__box {
+		width: 90%;
+		padding: 2em 0 4em 0;
+	}
+
+	&__phone {
+		padding: 1em;
+		@include flex(flex, "", center, center);
+
+		&--icon {
+			color: $dark-white;
+		}
+
+		&--text {
+			padding-left: 0.5em;
+		}
+	}
+
+	&__form {
+		& .contact-input {
+			width: 100%;
+			margin: 0.5em;
+			padding: 1em;
+			font-size: 1.4rem;
+			color: $dark-white;
+			text-decoration: none;
+			background-color: $section-container-color;
+			border: 0;
+			border-radius: 10px;
+
+			&:focus {
+				outline: transparent;
+			}
+		}
+
+		& .contact-textarea {
+			min-height: 200px;
+			resize: none;
+		}
+
+		& .form__btn {
+			margin: 0.5em;
+
+			& .contact-btn {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+
+// MEDIUM
+
+@media (min-width: 768px) {
+	.contact {
+		&__box {
+			width: 70%;
+		}
+
+		&__form {
+			& .contact-input,
+			& .form__btn {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+// LARGE
+
+@media (min-width: 992px) {
+	.contact {
+		&__box {
+			width: 50%;
+		}
+	}
+}

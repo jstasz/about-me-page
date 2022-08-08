@@ -259,63 +259,6 @@
 // 	}
 // }
 
-.contact {
-	margin-top: 3em;
-	text-align: center;
-
-	&__box {
-		width: 90%;
-		padding: 2em 0 4em 0;
-	}
-
-	&__phone {
-		padding: 1em;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		&--icon {
-			color: $dark-white;
-		}
-
-		&--text {
-			padding-left: 0.5em;
-		}
-	}
-
-	&__form {
-		& .contact-input {
-			width: 100%;
-			background-color: $section-container-color;
-			text-decoration: none;
-			border: 0;
-			margin: 0.5em;
-			padding: 1em;
-			width: 100%;
-			font-size: 1.4rem;
-			color: $dark-white;
-			border-radius: 10px;
-
-			&:focus {
-				outline: transparent;
-			}
-		}
-
-		& .contact-textarea {
-			min-height: 200px;
-			resize: none;
-		}
-
-		& .form__btn {
-			margin: 0.5em;
-
-			& .contact-btn {
-				font-size: 1.4rem;
-			}
-		}
-	}
-}
-
 .footer {
 	background-color: $section-container-color;
 	color: $dark-white;
