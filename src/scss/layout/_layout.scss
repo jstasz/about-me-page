@@ -211,53 +211,53 @@
 // 	}
 // }
 
-.skills {
-	padding: 2em;
-	width: 100%;
-	letter-spacing: 0.2em;
+// .skills {
+// 	padding: 2em;
+// 	width: 100%;
+// 	letter-spacing: 0.2em;
 
-	&__icons {
-		display: grid;
-		grid-template-columns: repeat(2, 4fr);
-		gap: 1.2em;
-		text-align: center;
-		margin: 3em 0;
-		background-color: $main-container-color;
-	}
+// 	&__icons {
+// 		display: grid;
+// 		grid-template-columns: repeat(2, 4fr);
+// 		gap: 1.2em;
+// 		text-align: center;
+// 		margin: 3em 0;
+// 		background-color: $main-container-color;
+// 	}
 
-	&__icon {
-		padding: 0.5em;
+// 	&__icon {
+// 		padding: 0.5em;
 
-		& .fa-brands {
-			font-size: 5rem;
-		}
+// 		& .fa-brands {
+// 			font-size: 5rem;
+// 		}
 
-		& .icon-name {
-			text-transform: uppercase;
-			padding-top: 1em;
-		}
-	}
+// 		& .icon-name {
+// 			text-transform: uppercase;
+// 			padding-top: 1em;
+// 		}
+// 	}
 
-	&__last-icon {
-		display: none;
-	}
+// 	&__last-icon {
+// 		display: none;
+// 	}
 
-	&__watch-projects {
-		padding-top: 2em;
-		text-align: center;
+// 	&__watch-projects {
+// 		padding-top: 2em;
+// 		text-align: center;
 
-		& .fa-chevron-down {
-			padding: 0.5em;
-			cursor: pointer;
-			position: relative;
+// 		& .fa-chevron-down {
+// 			padding: 0.5em;
+// 			cursor: pointer;
+// 			position: relative;
 
-			&::after {
-				@include pulse-element(50%);
-				animation: pulse 3s infinite;
-			}
-		}
-	}
-}
+// 			&::after {
+// 				@include pulse-element(50%);
+// 				animation: pulse 3s infinite;
+// 			}
+// 		}
+// 	}
+// }
 
 .projects {
 	& .project-box {

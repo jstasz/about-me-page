@@ -89,41 +89,41 @@
 	// 	}
 	// }
 
-	.skills {
-		margin: 0;
-		width: 50%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		background-color: $shadow-container-color;
+	// .skills {
+	// 	margin: 0;
+	// 	width: 50%;
+	// 	height: 100%;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: space-around;
+	// 	background-color: $shadow-container-color;
 
-		&__title {
-			visibility: hidden;
-		}
+	// 	&__title {
+	// 		visibility: hidden;
+	// 	}
 
-		&__icons {
-			padding-top: 6em;
-			grid-template-columns: repeat(3, 3fr);
-		}
+	// 	&__icons {
+	// 		padding-top: 6em;
+	// 		grid-template-columns: repeat(3, 3fr);
+	// 	}
 
-		&__icon {
-			& .fa-brands {
-				font-size: 3rem;
-			}
-			& .icon-name {
-				font-size: 1.2rem;
-			}
-		}
+	// 	&__icon {
+	// 		& .fa-brands {
+	// 			font-size: 3rem;
+	// 		}
+	// 		& .icon-name {
+	// 			font-size: 1.2rem;
+	// 		}
+	// 	}
 
-		&__last-icon {
-			display: block;
-		}
+	// 	&__last-icon {
+	// 		display: block;
+	// 	}
 
-		&__watch-projects {
-			padding-top: 0;
-		}
-	}
+	// 	&__watch-projects {
+	// 		padding-top: 0;
+	// 	}
+	// }
 
 	.contact {
 		&__box {
