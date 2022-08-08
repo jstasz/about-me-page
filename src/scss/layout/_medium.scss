@@ -21,27 +21,27 @@
 	// 	}
 	// }
 
-	.projects {
-		& .project-box {
-			flex-direction: row;
-			margin: 2em 4em;
+	// .projects {
+	// 	& .project-box {
+	// 		flex-direction: row;
+	// 		margin: 2em 4em;
 
-			&__picture {
-				width: 50%;
-			}
+	// 		&__picture {
+	// 			width: 50%;
+	// 		}
 
-			&--right {
-				& .project-box__content {
-					order: -1;
-				}
+	// 		&--right {
+	// 			& .project-box__content {
+	// 				order: -1;
+	// 			}
 
-				& .fa-github-square {
-					left: -100%;
-					transform: translateX(40px);
-				}
-			}
-		}
-	}
+	// 			& .fa-github-square {
+	// 				left: -100%;
+	// 				transform: translateX(40px);
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.contact {
 		&__box {
