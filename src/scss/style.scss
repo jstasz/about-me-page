@@ -1,6 +1,7 @@
-@import "./components.scss";
-@import "./hamburger.scss";
 @import "./base.scss";
+@import "./mixins.scss";
+@import "./components.scss";
+@import "./vendors/hamburger.scss";
 @import "./layout/nav.scss";
 @import "./layout/about-me.scss";
 @import "./layout/skills.scss";

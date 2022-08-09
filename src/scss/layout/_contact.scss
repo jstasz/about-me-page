@@ -25,7 +25,6 @@
 			width: 100%;
 			margin: 0.5em;
 			padding: 1em;
-			font-size: 1.4rem;
 			color: $dark-white;
 			text-decoration: none;
 			background-color: $section-container-color;
@@ -44,10 +43,6 @@
 
 		& .form__btn {
 			margin: 0.5em;
-
-			& .contact-btn {
-				font-size: 1.4rem;
-			}
 		}
 	}
 }
@@ -58,13 +53,6 @@
 	.contact {
 		&__box {
 			width: 70%;
-		}
-
-		&__form {
-			& .contact-input,
-			& .form__btn {
-				font-size: 1.8rem;
-			}
 		}
 	}
 }
