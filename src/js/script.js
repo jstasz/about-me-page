@@ -1,12 +1,18 @@
 "use strict";
 
-const skillsIcons = document.querySelector(".skills__icons");
 const nav = document.querySelector(".nav");
+const navBtn = document.querySelector(".hamburger");
+const navContainer = document.querySelector(".nav");
+const navLinks = document.querySelectorAll(".nav__link");
+
 const aboutMePhoto = document.querySelector(".about-me__photo--img");
+const animationBox = document.querySelector(".about-me__animations");
+
+const skillsIcons = document.querySelector(".skills__icons");
 
 // SKILLS ANIMATION
 
-const handleHover = function (e) {
+const skillsHandleHover = function (e) {
 	const touchedIcon = e.target.closest(".skills__icon");
 
 	if (!touchedIcon) return;
@@ -20,50 +26,13 @@ const handleHover = function (e) {
 	});
 };
 
-skillsIcons.addEventListener("mouseover", handleHover.bind(0.3));
-skillsIcons.addEventListener("mouseout", handleHover.bind(1));
+skillsIcons.addEventListener("mouseover", skillsHandleHover.bind(0.3));
+skillsIcons.addEventListener("mouseout", skillsHandleHover.bind(1));
 
 // ANIMATION SLIDER FOR PERSONAL
 
-// const animationBox = document.querySelector(".about-me__animations");
-// const slides = Array.from(animationBox.children);
-// const btn = document.querySelector(".fa-chevron-down");
-// let a = 1;
-
-// const personalAnimation = function () {
-// 	let lastSlide = document.querySelector(".about-me__animation--last");
-
-// 	let newLastSlide = lastSlide.previousElementSibling;
-
-// 	// slides.forEach((slide) =>
-// 	// 	slide.classList.contains(`about-me__animation--last`)
-// 	// 		? ""
-// 	// 		: (slide.style.transform = `translateY(${i * 100}%)`)
-// 	// );
-
-// 	for (let i = 0; i < slides.length; i++) {
-// 		if (slides[i].classList.contains(`about-me__animation--last`)) {
-// 			slides[i].style.transform = `translateY(-${i * 100}%)`;
-// 		} else {
-// 			slides[i].style.transform = `translateY(${a * 100}%)`;
-// 		}
-// 	}
-
-// 	if (!lastSlide.previousElementSibling) lastSlide = slides[slides.length - 1];
-
-// 	a += 1;
-// 	lastSlide.classList.remove("about-me__animation--last");
-// 	newLastSlide.classList.add("about-me__animation--last");
-
-// 	newLastSlide = lastSlide;
-// };
-
-// btn.addEventListener("click", personalAnimation);
-
-const animationBox = document.querySelector(".about-me__animations");
-const slides = Array.from(animationBox.children);
-
 const personalAnimation = function () {
+	const slides = Array.from(animationBox.children);
 	const currentSlide = animationBox.querySelector(
 		".about-me__animation--active"
 	);
@@ -80,10 +49,6 @@ const personalAnimation = function () {
 setInterval(personalAnimation, 1500);
 
 // NAV HAMBURGER
-
-const navBtn = document.querySelector(".hamburger");
-const navContainer = document.querySelector(".nav");
-const navLinks = document.querySelectorAll(".nav__link");
 
 const navActive = () => {
 	navBtn.classList.toggle("is-active");
