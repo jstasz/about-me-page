@@ -55,6 +55,10 @@
 
 @media (min-width: 768px) {
 	.project {
+		&__container {
+			margin-top: 0;
+		}
+
 		&__box {
 			flex-direction: row;
 			margin: 2em 4em;
