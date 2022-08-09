@@ -1,6 +1,8 @@
 "use strict";
 
 const skillsIcons = document.querySelector(".skills__icons");
+const nav = document.querySelector(".nav");
+const aboutMePhoto = document.querySelector(".about-me__photo--img");
 
 // SKILLS ANIMATION
 
@@ -99,16 +101,14 @@ navBtn.addEventListener("click", navActive);
 
 // NAV CHANGE COLOR
 
-const nav = document.querySelector(".nav");
-const photo = document.querySelector(".about-me__photo--img");
-const photoTop = photo.offsetTop;
-
-const handleObserver = () => {
+const navObserver = () => {
 	const navScroll = window.scrollY;
+	const navHeight = nav.offsetHeight;
+	const photoTop = aboutMePhoto.offsetTop;
 
-	navScroll > photoTop
+	navScroll > photoTop - navHeight
 		? nav.classList.add("nav--dark")
 		: nav.classList.remove("nav--dark");
 };
 
-window.addEventListener("scroll", handleObserver);
+window.addEventListener("scroll", navObserver);
