@@ -25,7 +25,7 @@ const addNewProject = function (project) {
 	const side = projects.length % 2 === 0 ? `left` : `right`;
 	const markUp = `
     <div class="project__box project__box--${side}">
-    <img src="/my-photo.dd70123f.png" alt="" class="project__picture" />
+    <img src="../images/my-photo.png" alt="" class="project__picture" />
     <div class="project__content">
         <a
             class="git-link"
