@@ -1,6 +1,5 @@
 .project {
 	&__box {
-		position: relative;
 		width: 100%;
 		margin: 2em 0;
 		@include flex(flex, column, "", "");
@@ -18,13 +17,19 @@
 		width: 100%;
 		transition: transform 0.3s;
 		filter: brightness(0.4);
+		height: 250px;
+		background-image: url(../images/gues-my-number.png);
+		background-position: center;
+		background-size: cover;
 	}
 
 	&__content {
+		position: relative;
 		margin: auto 0;
 		padding: 2em;
 		text-align: center;
-		z-index: 1;
+		z-index: 10;
+		width: 100%;
 
 		& .project__title {
 			padding-bottom: 1em;
@@ -60,8 +65,13 @@
 		}
 
 		&__box {
+			position: relative;
 			flex-direction: row;
 			margin: 2em 4em;
+
+			& .fa-github-square {
+				top: -1.2em;
+			}
 
 			&--right {
 				& .project__content {
@@ -73,10 +83,6 @@
 					transform: translateX(30px);
 				}
 			}
-		}
-
-		&__picture {
-			width: 50%;
 		}
 	}
 }

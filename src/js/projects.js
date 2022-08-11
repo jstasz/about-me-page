@@ -1,48 +1,32 @@
-"use strict";
+import aboutMePage from "../images/about-me-page.png";
+import guesMyNumber from "../images/gues-my-number.png";
+import sweetWebsiteShop from "../images/sweetWebsiteShop.png";
 
-const projectsContainer = document.querySelector(".project__container");
-const projects = [];
-
-const project1 = {
-	image: `https://raw.githubusercontent.com/jstasz/find-and-add-recipe-web/master/src/img/logo.png?token=GHSAT0AAAAAABWQTWKJ6P2F5EGYUZH46IYIYXSEEJQ`,
-	title: `find-and-add`,
+export const project1 = {
+	title: `About Me Page`,
+	img: aboutMePage,
 	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
     praesentium quos illo, amet voluptates quam qui ut quidem itaque
     odio, tempore expedita eveniet saepe minima debitis mollitia
     placeat, nesciunt obcaecati.`,
 };
 
-const project2 = {
-	image: `https://raw.githubusercontent.com/jstasz/find-and-add-recipe-web/master/src/img/logo.png?token=GHSAT0AAAAAABWQTWKJ6P2F5EGYUZH46IYIYXSEEJQ`,
-	title: `find-and-add`,
+export const project2 = {
+	title: `Gues My Number`,
+	img: guesMyNumber,
 	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
     praesentium quos illo, amet voluptates quam qui ut quidem itaque
     odio, tempore expedita eveniet saepe minima debitis mollitia
     placeat, nesciunt obcaecati.`,
 };
 
-const addNewProject = function (project) {
-	const side = projects.length % 2 === 0 ? `left` : `right`;
-	const markUp = `
-    <div class="project__box project__box--${side}">
-    <img url="${project.image}" alt="" class="project__picture" />
-    <div class="project__content">
-        <a
-            class="git-link"
-            href="https://github.com/jstasz/just-sweet-website"
-            target="_blank"
-            ><i class="fa-brands fa-github-square"></i
-        ></a>
-        <h3 class="project__title section-title">${project.title}</h3>
-        <p class="project__description">
-            ${project.description}
-        </p>
-    </div>
-</div>`;
-
-	projectsContainer.insertAdjacentHTML("beforeend", markUp);
-	projects.push(project);
+export const project3 = {
+	title: `Sweet Website Shop`,
+	img: sweetWebsiteShop,
+	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+    praesentium quos illo, amet voluptates quam qui ut quidem itaque
+    odio, tempore expedita eveniet saepe minima debitis mollitia
+    placeat, nesciunt obcaecati.`,
 };
 
-addNewProject(project1);
-addNewProject(project2);
+export const projectTable = [project1, project2, project3];
