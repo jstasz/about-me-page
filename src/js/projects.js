@@ -1,6 +1,6 @@
 import aboutMePage from "../images/about-me-page.png";
 import guesMyNumber from "../images/gues-my-number.png";
-import sweetWebsiteShop from "../images/sweetWebsiteShop.png";
+import sweetWebsitePage from "../images/sweetWebsitePage.jpg";
 
 const projectsContainer = document.querySelector(".project__container");
 const projectsArray = [];
@@ -25,7 +25,7 @@ const project2 = {
 
 const project3 = {
 	title: `Sweet Website Shop`,
-	img: sweetWebsiteShop,
+	img: sweetWebsitePage,
 	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
     praesentium quos illo, amet voluptates quam qui ut quidem itaque
     odio, tempore expedita eveniet saepe minima debitis mollitia
