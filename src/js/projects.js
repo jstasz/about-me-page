@@ -2,7 +2,10 @@ import aboutMePage from "../images/about-me-page.png";
 import guesMyNumber from "../images/gues-my-number.png";
 import sweetWebsiteShop from "../images/sweetWebsiteShop.png";
 
-export const project1 = {
+const projectsContainer = document.querySelector(".project__container");
+const projectsArray = [];
+
+const project1 = {
 	title: `About Me Page`,
 	img: aboutMePage,
 	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -11,7 +14,7 @@ export const project1 = {
     placeat, nesciunt obcaecati.`,
 };
 
-export const project2 = {
+const project2 = {
 	title: `Gues My Number`,
 	img: guesMyNumber,
 	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -20,7 +23,7 @@ export const project2 = {
     placeat, nesciunt obcaecati.`,
 };
 
-export const project3 = {
+const project3 = {
 	title: `Sweet Website Shop`,
 	img: sweetWebsiteShop,
 	description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -29,10 +32,7 @@ export const project3 = {
     placeat, nesciunt obcaecati.`,
 };
 
-const projectsContainer = document.querySelector(".project__container");
-const projectsArray = [];
-
-const addNewProject = function (project) {
+const creaTeNewProject = function (project) {
 	const boxSide = projectsArray.length % 2 === 0 ? `left` : `right`;
 	const markUp = `
     <div class="project__box project__box--${boxSide}">
@@ -54,6 +54,7 @@ const addNewProject = function (project) {
 	const pictureDiv = document.querySelector(".project__picture");
 	pictureDiv.style.backgroundImage = `url(${project.img})`;
 };
-addNewProject(project1);
-addNewProject(project2);
-addNewProject(project3);
+
+creaTeNewProject(project1);
+creaTeNewProject(project2);
+creaTeNewProject(project3);
