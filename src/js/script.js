@@ -1,6 +1,6 @@
 "use strict";
 
-import * as projects from "./projects.js";
+// import * as projects from "./projects.js";
 
 const nav = document.querySelector(".nav");
 const navBtn = document.querySelector(".hamburger");
@@ -79,34 +79,3 @@ const navObserver = () => {
 };
 
 window.addEventListener("scroll", navObserver);
-
-// PROJECTS
-
-const projectsContainer = document.querySelector(".project__container");
-const projectsArray = [];
-
-const addNewProject = function (project) {
-	const boxSide = projectsArray.length % 2 === 0 ? `left` : `right`;
-	const markUp = `
-    <div class="project__box project__box--${boxSide}">
-		<div class="project__picture"></div>
-		<div class="project__content">
-			<a class="git-link" href="https://github.com/jstasz/${project.title}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-			<div class="project__text">
-				<h3 class="project__title section-title">${project.title}</h3>
-				<p class="project__description">
-					${project.description}
-				</p>
-			</div>
-		</div>
-	</div>`;
-
-	projectsContainer.insertAdjacentHTML("afterbegin", markUp);
-	// projectsArray.push(project);
-
-	const pictureDiv = document.querySelector(".project__picture");
-	pictureDiv.style.backgroundImage = `url(${project.img})`;
-};
-addNewProject(projects.project1);
-addNewProject(projects.project2);
-addNewProject(projects.project3);

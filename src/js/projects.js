@@ -29,4 +29,31 @@ export const project3 = {
     placeat, nesciunt obcaecati.`,
 };
 
-export const projectTable = [project1, project2, project3];
+const projectsContainer = document.querySelector(".project__container");
+const projectsArray = [];
+
+const addNewProject = function (project) {
+	const boxSide = projectsArray.length % 2 === 0 ? `left` : `right`;
+	const markUp = `
+    <div class="project__box project__box--${boxSide}">
+		<div class="project__picture"></div>
+		<div class="project__content">
+			<a class="git-link" href="https://github.com/jstasz/${project.title}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+			<div class="project__text">
+				<h3 class="project__title section-title">${project.title}</h3>
+				<p class="project__description">
+					${project.description}
+				</p>
+			</div>
+		</div>
+	</div>`;
+
+	projectsContainer.insertAdjacentHTML("afterbegin", markUp);
+	projectsArray.push(project);
+
+	const pictureDiv = document.querySelector(".project__picture");
+	pictureDiv.style.backgroundImage = `url(${project.img})`;
+};
+addNewProject(project1);
+addNewProject(project2);
+addNewProject(project3);
