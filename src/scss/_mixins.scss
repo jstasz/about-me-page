@@ -36,6 +36,13 @@
 	);
 }
 
+@mixin backgroundImage($image, $position, $size, $repeat) {
+	background-image: $image;
+	background-position: $position;
+	background-size: $size;
+	background-repeat: $repeat;
+}
+
 @keyframes pulse {
 	from {
 		transform: scale(1);

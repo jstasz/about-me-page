@@ -17,10 +17,13 @@
 		width: 100%;
 		height: 250px;
 		transition: transform 0.3s;
+		@include backgroundImage(
+			url(../images/gues-my-number.png),
+			center,
+			cover,
+			""
+		);
 		filter: brightness(0.4);
-		background-image: url(../images/gues-my-number.png);
-		background-position: center;
-		background-size: cover;
 	}
 
 	&__content {

@@ -37,8 +37,14 @@ body {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 1.2rem;
 	color: $dirty-white;
-	background-image: url(../../src/images/stars-g41a1685af_640.png);
-	background-repeat: repeat;
+	@include backgroundImage(
+		url(../../src/images/stars-g41a1685af_640.png),
+		"",
+		"",
+		repeat
+	);
+	// background-image: url(../../src/images/stars-g41a1685af_640.png);
+	// background-repeat: repeat;
 }
 
 // SMALL
