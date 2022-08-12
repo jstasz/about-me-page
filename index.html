@@ -13,14 +13,30 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://kit.fontawesome.com/434e1998f3.js"
-			crossorigin="anonymous"
-		></script>
 
 		<link href="./src/scss/style.scss" rel="stylesheet" />
 
 		<title>Justyna Szajuk</title>
+		<script
+			src="https://kit.fontawesome.com/434e1998f3.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("html").on("submit", "#contact_form", function (e) {
+					e.preventDefault();
+					$("#send_form_status").html("").hide();
+					var data = $("#contact_form").serialize();
+					$.post("/send_form.php", data, function (res) {
+						$("#send_form_status").html(res.msg).show();
+						if (res.status == 1) {
+							$("#contact_form")[0].reset();
+						}
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<header>
@@ -136,37 +152,69 @@
 		</section>
 		<section id="contact" class="contact">
 			<div class="section-container contact__container wrapper">
-				<h2 class="contact__title section-title">kontakt</h2>
+				<h2>Formularz kontaktowy</h2>
+				<div id="send_form_status"></div>
+				<form method="post" action="/send_form.php" id="contact_form">
+					<div><label for="name">Imię i nazwisko</label></div>
+					<div>
+						<input type="text" name="name" id="name" class="formField" />
+					</div>
+					<div><label for="phone">Numer telefonu</label></div>
+					<div>
+						<input type="text" name="phone" id="phone" class="formField" />
+					</div>
+					<div><label for="email">Adres email</label></div>
+					<div>
+						<input type="text" name="email" id="email" class="formField" />
+					</div>
+					<div><label for="message">Treść wiadomości</label></div>
+					<div>
+						<textarea name="message" id="message" class="formField"></textarea>
+					</div>
+					<div><button id="sendBtn">Wyślij</button></div>
+				</form>
+				<!-- <h2 class="contact__title section-title">kontakt</h2>
 				<div class="contact__box">
-					<form class="contact__form" id="contactForm">
+					<div id="send_form_status"></div>
+					<form
+						method="post"
+						action="/send_form.php"
+						id="contact_form"
+						class="contact__form"
+					>
 						<div>
-							<label for="field-name"></label>
+							<label for="name"></label>
 							<input
-								class="contact-input"
+								class="formField contact-input"
 								type="text"
 								name="name"
+								id="name"
 								placeholder="imię"
 							/>
 						</div>
 						<div>
-							<label for="field-email"></label>
+							<label for="email"></label>
 							<input
-								class="contact-input"
-								type="email"
+								class="formField contact-input"
+								type="text"
 								name="email"
+								id="email"
 								placeholder="e-mail"
 							/>
 						</div>
 						<div>
-							<label for="field-message"></label>
+							<label for="message"></label>
 							<textarea
-								class="contact-input contact-textarea"
+								class="formField contact-input contact-textarea"
 								name="message"
+								id="message"
 								placeholder="wiadomość"
 							></textarea>
 						</div>
 						<div class="form__btn">
-							<button type="submit" class="button contact-btn">Wyślij</button>
+							<button type="submit" class="button contact-btn" id="sendBtn">
+								Wyślij
+							</button>
 						</div>
 					</form>
 					<div class="contact__informations">
@@ -179,7 +227,7 @@
 							<p class="contact__information--text">jszajuk@gmail.com</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<footer class="footer">
