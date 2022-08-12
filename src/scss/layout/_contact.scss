@@ -7,8 +7,12 @@
 		padding: 2em 0 4em 0;
 	}
 
-	&__phone {
+	&__informations {
 		padding: 1em;
+	}
+
+	&__information {
+		padding: 0.5em;
 		@include flex(flex, "", center, center);
 
 		&--icon {
