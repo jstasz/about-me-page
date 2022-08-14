@@ -80,6 +80,27 @@ const navObserver = () => {
 
 window.addEventListener("scroll", navObserver);
 
+// ACTIVE LINK
+
+const sections = document.querySelectorAll(".section");
+
+const currentSection = function () {
+	const windowScroll = window.scrollY;
+
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.offsetHeight;
+		const sectionBottom = sectionTop + sectionHeight - 1;
+		const space = 30;
+
+		windowScroll >= sectionTop - space && windowScroll < sectionBottom - space
+			? section.classList.add("current-section")
+			: section.classList.remove("current-section");
+	});
+};
+
+window.addEventListener("scroll", currentSection);
+
 // FOOTER - YEAR
 
 const footerYear = document.querySelector(".footer__year");
