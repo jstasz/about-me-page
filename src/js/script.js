@@ -11,6 +11,7 @@ const aboutMePhoto = document.querySelector(".about-me__photo--img");
 const animationBox = document.querySelector(".about-me__animations");
 
 const skillsIcons = document.querySelector(".skills__icons");
+const sectionActive = document.querySelector(".current-section");
 
 // SKILLS ANIMATION
 
@@ -96,6 +97,18 @@ const currentSection = function () {
 		windowScroll >= sectionTop - space && windowScroll < sectionBottom - space
 			? section.classList.add("current-section")
 			: section.classList.remove("current-section");
+	});
+
+	const currentSec = document.querySelector(".current-section");
+
+	if (!currentSec) return;
+
+	const currentSecId = currentSec.id;
+
+	navLinks.forEach((link) => {
+		link.getAttribute("href").slice(1) === currentSecId
+			? link.classList.add("nav__link--active")
+			: link.classList.remove("nav__link--active");
 	});
 };
 
