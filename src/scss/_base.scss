@@ -44,8 +44,6 @@ body {
 		"",
 		repeat
 	);
-	// background-image: url(../../src/images/stars-g41a1685af_640.png);
-	// background-repeat: repeat;
 }
 
 // SMALL
@@ -59,14 +57,6 @@ body {
 // MEDIUM
 
 @media (min-width: 768px) {
-	body {
-		font-size: 1.4rem;
-	}
-}
-
-// LARGE
-
-@media (min-width: 992px) {
 	body {
 		font-size: 1.5rem;
 	}

@@ -2,7 +2,7 @@
 	width: 100%;
 	padding: 2em;
 	letter-spacing: 0.2em;
-	@include flex(flex, column, space-around, "");
+	@include flex(flex, column, center, "");
 
 	&__icons {
 		margin: 3em 0;
@@ -14,7 +14,6 @@
 
 	&__icon {
 		padding: 0.5em;
-		background-color: $main-container-color;
 
 		& .fa-brands {
 			font-size: 5rem;
@@ -23,6 +22,7 @@
 		& .icon-name {
 			padding-top: 1em;
 			text-transform: uppercase;
+			background-color: $main-container-color;
 		}
 	}
 
@@ -54,12 +54,11 @@
 		background-color: $shadow-container-color;
 
 		&__title {
-			visibility: hidden;
+			text-transform: lowercase;
 		}
 
 		&__icons {
 			grid-template-columns: repeat(3, 3fr);
-			padding-top: 6em;
 		}
 
 		&__icon {

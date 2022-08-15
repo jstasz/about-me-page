@@ -7,7 +7,7 @@ const navBtn = document.querySelector(".hamburger");
 const navContainer = document.querySelector(".nav");
 const navLinks = document.querySelectorAll(".nav__link");
 
-const aboutMePhoto = document.querySelector(".about-me__photo--img");
+const mainTitle = document.querySelector(".main-title");
 const animationBox = document.querySelector(".about-me__animations");
 
 const skillsIcons = document.querySelector(".skills__icons");
@@ -72,9 +72,9 @@ navBtn.addEventListener("click", navActive);
 const navObserver = () => {
 	const navScroll = window.scrollY;
 	const navHeight = nav.offsetHeight;
-	const photoTop = aboutMePhoto.offsetTop;
+	const titleTop = mainTitle.offsetTop;
 
-	navScroll > photoTop - navHeight
+	navScroll > titleTop - navHeight
 		? nav.classList.add("nav--dark")
 		: nav.classList.remove("nav--dark");
 };

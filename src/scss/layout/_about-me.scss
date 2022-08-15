@@ -1,28 +1,9 @@
 .about-me {
 	height: 100vh;
-	min-height: 660px;
+	min-height: 570px;
 	padding: 2em;
 	@include flex(flex, column, space-around, "");
 	letter-spacing: 0.2em;
-
-	&__title {
-		&--dev {
-			text-transform: lowercase;
-		}
-	}
-
-	&__photo {
-		box-shadow: inset 0px 0px 100px 27px rgba(0, 0, 0, 1);
-
-		&--img {
-			display: block;
-			width: 10em;
-			height: 10em;
-			margin: 0 auto;
-			border-radius: 10px;
-			filter: grayscale(100%);
-		}
-	}
 
 	&__description {
 		padding: 1em;
@@ -55,30 +36,13 @@
 	}
 }
 
-// SMALL
-
-@media (min-width: 576px) {
-	.about-me {
-		min-height: 800px;
-	}
-}
-
 // MEDIUM
 
 @media (min-width: 768px) {
 	.about-me {
 		width: 50%;
 		height: 100%;
-		min-height: 0;
 		background-color: $shadow-container-color;
-
-		&__photo {
-			&--img {
-				position: absolute;
-				top: 10%;
-				right: 19%;
-			}
-		}
 
 		&__description {
 			padding: 1em 0;

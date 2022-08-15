@@ -1,6 +1,6 @@
 .project {
 	&__box {
-		width: 90%;
+		width: 100%;
 		margin-top: 2em;
 		@include flex(flex, column, "", "");
 		background-color: $section-container-color;
@@ -73,7 +73,6 @@
 			position: relative;
 			flex-direction: row;
 			margin: 2em 4em;
-			width: 80%;
 
 			&--right {
 				& .project__content {
@@ -99,6 +98,8 @@
 @media (min-width: 1200px) {
 	.project {
 		&__box {
+			width: 90%;
+
 			& .fa-github-square {
 				padding: 1em;
 			}
