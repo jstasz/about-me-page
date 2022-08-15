@@ -1,6 +1,6 @@
 "use strict";
 
-// import * as projects from "./projects.js";
+import * as projects from "./projects.js";
 
 const nav = document.querySelector(".nav");
 const navBtn = document.querySelector(".hamburger");
@@ -92,7 +92,7 @@ const currentSection = function () {
 		const sectionTop = section.offsetTop;
 		const sectionHeight = section.offsetHeight;
 		const sectionBottom = sectionTop + sectionHeight - 1;
-		const space = 30;
+		const space = 100;
 
 		windowScroll >= sectionTop - space && windowScroll < sectionBottom - space
 			? section.classList.add("current-section")
