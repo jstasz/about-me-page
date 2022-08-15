@@ -12,13 +12,15 @@
 	}
 
 	&__photo {
+		box-shadow: inset 0px 0px 100px 27px rgba(0, 0, 0, 1);
+
 		&--img {
 			display: block;
 			width: 10em;
 			height: 10em;
 			margin: 0 auto;
-			border-radius: 50%;
-			filter: brightness(0.4);
+			border-radius: 10px;
+			filter: grayscale(100%);
 		}
 	}
 
@@ -74,7 +76,7 @@
 			&--img {
 				position: absolute;
 				top: 10%;
-				right: 20%;
+				right: 19%;
 			}
 		}
 
