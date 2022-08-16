@@ -7,6 +7,13 @@
 		padding: 2em 0 4em 0;
 	}
 
+	&__alert {
+		display: none;
+		padding-bottom: 1em;
+		color: $dark-white;
+		font-style: italic;
+	}
+
 	&__informations {
 		padding: 1em;
 	}

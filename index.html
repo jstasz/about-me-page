@@ -129,46 +129,48 @@
 			<div class="section-container contact__container wrapper">
 				<h2 class="contact__title section-title">kontakt</h2>
 				<div class="contact__box">
-					<div id="send_form_status"></div>
+					<div class="contact__alert">Twoja wiadomość została wysłana</div>
+
 					<form
 						method="post"
 						action="/send_form.php"
-						id="contact_form"
+						id="contactForm"
 						class="contact__form"
 					>
 						<div>
 							<label for="name"></label>
 							<input
-								class="formField contact-input"
+								class="contact-input"
 								type="text"
 								name="name"
 								id="name"
 								placeholder="imię"
+								required
 							/>
 						</div>
 						<div>
 							<label for="email"></label>
 							<input
-								class="formField contact-input"
-								type="text"
+								class="contact-input"
+								type="email"
 								name="email"
 								id="email"
 								placeholder="e-mail"
+								required
 							/>
 						</div>
 						<div>
 							<label for="message"></label>
 							<textarea
-								class="formField contact-input contact-textarea"
+								class="contact-input contact-textarea"
 								name="message"
 								id="message"
 								placeholder="wiadomość"
+								required
 							></textarea>
 						</div>
 						<div class="form__btn">
-							<button type="submit" class="button contact-btn" id="sendBtn">
-								Wyślij
-							</button>
+							<button type="submit" class="button contact-btn">Wyślij</button>
 						</div>
 					</form>
 					<div class="contact__informations">
@@ -206,6 +208,8 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 		<script type="module" src="./src/js/script.js"></script>
 	</body>
 </html>
