@@ -49,13 +49,13 @@ class Project {
 
 const projectAboutmePage = new Project(
 	"about me page",
-	`Responsywna strona z projektami. Zawiera podstawowe informacje na temat autora,  portfolio oraz formularz kontaktowy. Projekt zakłada łatwe dodawanie kolejnych projektów poprzez dołączenie ich nazwy i opisu do specjalnego pliku js. Ikona GitHub zajadująca się przy każdym projekcie działa jako odsyłacz do kodu projektu dostępnego na gitHubie.`,
+	`Responsywna strona z projektami. Zawiera podstawowe informacje na temat autora,  portfolio oraz formularz kontaktowy. Projekt zakłada łatwe dodawanie kolejnych projektów poprzez dołączenie ich nazwy i opisu do specjalnego pliku js. Ikona GitHub zajadująca się przy każdym projekcie działa jako odsyłacz do kodu dostępnego na gitHubie.`,
 	aboutMePage
 );
 
 const projectGuessMyNumber = new Project(
 	`guess my number`,
-	`Gra dla jednej osoby polegająca na odnalezieniu prawidłowego numeru od 0 do 20. Prawidłowa liczba jest przypisywana losowo i ukrywana. Użytkownik na start dosteje 20 pkt. Przy każdej nieudanej próbie wskazania numeru, dostaje on informację czy wpisana przez niego liczba jest za mała czy za duża oraz otrzymuje -1 punkt. Najwyższy zdobyty wynik jest przechowywany dla użytkownika do momentu odświeżenia strony.`,
+	`Gra dla jednej osoby polegająca na odnalezieniu prawidłowego numeru od 0 do 20. Prawidłowa liczba jest przypisywana losowo. Użytkownik na start dosteje 20 pkt. Przy każdej nieudanej próbie wskazania numeru, dostaje informację czy liczba jest za mała czy za duża oraz otrzymuje -1 punkt. Najwyższy zdobyty wynik jest przechowywany dla użytkownika.`,
 	guessMyNumber
 );
 
