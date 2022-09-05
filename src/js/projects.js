@@ -73,9 +73,8 @@ const projectBankistApp = new Project(
 
 const projectRestaurantsApp = new Project(
 	`restaurants app`,
-	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji i innych miejsc które odwiedził lub chce odwiedzić. Aplikacja tworzy listę restauracji z oceną użytkownika i umożliwia sortowanie wyników od najwyższej oceny.`,
-	restaurantsApp,
-	true
+	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji, które odwiedził. Aplikacja tworzy listę restauracji z oceną użytkownika (jedzenie, serwis, cena i ogólne wrażenie). Dla każdej restauracji obliczana jest średnia ocena. Mapa wchodzi w interakcję z listą restauracji. Dane zapisywane w local storage.`,
+	restaurantsApp
 );
 
 const projectSweetWebsiteShop = new Project(
