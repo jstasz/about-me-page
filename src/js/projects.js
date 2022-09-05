@@ -9,10 +9,11 @@ const projectsContainer = document.querySelector(".project__container");
 const projectsArray = [];
 
 class Project {
-	constructor(title, description, img, prepair = false) {
+	constructor(title, description, img, www = "", prepair = false) {
 		this.title = title;
 		this.description = description;
 		this.img = img;
+		this.www = www;
 		this.prepair = prepair;
 		this._addTotable();
 		this._addProject();
@@ -30,10 +31,15 @@ class Project {
 			this.title
 		}"/>
 				<div class="project__content">
-					<a class="git-link" href="https://github.com/jstasz/${this.title.replaceAll(
-						" ",
-						"-"
-					)}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+					<div class="project__icons">
+						<a class="project__icons-gitlink" href="https://github.com/jstasz/${this.title.replaceAll(
+							" ",
+							"-"
+						)}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+						<a class="project__icons-livelink" href="${
+							this.www === "" ? "" : this.www
+						}" target="_blank"><i class="fa-regular fa-images"></i></a>
+					</div>
 					<div class="project__text">
 						<h3 class="project__title section-title">${
 							this.prepair === true ? this.title + " (w trakcie)" : this.title
@@ -74,12 +80,14 @@ const projectBankistApp = new Project(
 const projectRestaurantsApp = new Project(
 	`restaurants app`,
 	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji, które odwiedził. Aplikacja tworzy listę restauracji z oceną użytkownika (jedzenie, serwis, cena i ogólne wrażenie). Dla każdej restauracji obliczana jest średnia ocena. Mapa wchodzi w interakcję z listą restauracji. Dane zapisywane w local storage.`,
-	restaurantsApp
+	restaurantsApp,
+	"https://jsta-restaurants-app.netlify.app/"
 );
 
 const projectSweetWebsiteShop = new Project(
 	`sweet website shop`,
 	`Sklep internetowy, służący do składania zamówienia na troty artystyczne. Użytkownik może wybrać smak, wygląd i wielkość tortu. Zamówienie może złożyć on-line lub wysyłając wiadomość poprzez formularz kontaktowy.`,
 	sweetWebsitePage,
+	"",
 	true
 );

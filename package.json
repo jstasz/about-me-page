@@ -1,22 +1,31 @@
 {
-	"name": "me",
-	"version": "1.0.0",
-	"description": "",
-	"default": "index.html",
-	"scripts": {
-		"start": "parcel index.html",
-		"build": "parcel build index.html --dist-dir ./dist"
-	},
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@parcel/transformer-jsonld": "^2.7.0",
-		"@parcel/transformer-sass": "^2.7.0",
-		"parcel": "^2.7.0",
-		"parcel-bundler": "^1.12.5",
-		"sass": "^1.53.0"
-	},
-	"dependencies": {
-		"firebase": "^8.10.1"
-	}
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-jsonld": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "firebase": "^8.10.1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstasz/about-me-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jstasz/about-me-page/issues"
+  },
+  "homepage": "https://github.com/jstasz/about-me-page#readme"
 }
