@@ -14,8 +14,7 @@
 }
 
 .section-container {
-	padding: 0 2em;
-	padding-top: 2em;
+	padding: 3em 1em 0 1em;
 	@include flex(flex, column, center, center);
 }
 
@@ -63,8 +62,7 @@
 
 @media (min-width: 576px) {
 	.section-container {
-		padding: 0 5em;
-		padding-top: 2em;
+		padding: 3em 3em 0 3em;
 	}
 
 	.main-title {
@@ -88,8 +86,8 @@
 
 // LARGE
 
-@media (min-width: 992px) {
-	.section-container {
-		padding-top: 3em;
-	}
-}
+// @media (min-width: 992px) {
+// 	.section-container {
+// 		padding-top: 3em;
+// 	}
+// }

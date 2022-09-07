@@ -44,15 +44,24 @@ navLinks.forEach((link) => link.addEventListener("click", navUnactive));
 const currentSection = function () {
 	sections.forEach((section) => {
 		const windowScroll = window.scrollY;
-		const windowHeight = window.offsetHeight;
 		const sectionTop = section.offsetTop;
 		const sectionHeight = section.offsetHeight;
 		const sectionBottom = sectionTop + sectionHeight - 1;
 		const space = 100;
+		const contactsection = document.getElementById("contact");
 
-		windowScroll >= sectionTop - space && windowScroll < sectionBottom - space
+		const endOfPage = (document.body.scrollTop =
+			document.documentElement.scrollHeight - window.innerHeight);
+
+		windowScroll >= sectionTop - space &&
+		windowScroll < sectionBottom - space &&
+		Math.trunc(windowScroll) < endOfPage
 			? section.classList.add("current-section")
 			: section.classList.remove("current-section");
+
+		Math.trunc(windowScroll) === endOfPage
+			? contactsection.classList.add("current-section")
+			: "";
 	});
 };
 
