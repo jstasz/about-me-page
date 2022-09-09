@@ -6,7 +6,12 @@ import bankistApp from "../images/bankistApp.png";
 import restaurantsApp from "../images/restaurantsApp.jpg";
 
 const projectsContainer = document.querySelector(".project__container");
+const watchProjects = document.querySelector(".project__watch-projects");
+const watchGit = document.querySelector(".project__watch-more");
 const projectsArray = [];
+
+console.log(watchGit);
+console.log(watchProjects);
 
 class Project {
 	constructor(title, description, img, www = "", prepair = false) {
@@ -16,17 +21,16 @@ class Project {
 		this.www = www;
 		this.prepair = prepair;
 		this._addTotable();
-		this._addProject();
 	}
 
 	_addTotable() {
 		projectsArray.push(this);
 	}
 
-	_addProject() {
+	_projectMarkup() {
 		const boxSide = projectsArray.length % 2 === 0 ? `left` : `right`;
 		const markUp = `
-    		<div class="project__box project__box--${boxSide}">
+			<div class="project__box project__box--${boxSide}">
 				<img class="project__picture" src="${this.img}" alt="zdjęcie projektu ${
 			this.title
 		}"/>
@@ -36,9 +40,11 @@ class Project {
 							" ",
 							"-"
 						)}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-						<a class="project__icons-livelink" href="${
-							this.www === "" ? "" : this.www
-						}" target="_blank"><i class="fa-regular fa-images"></i></a>
+						${
+							this.www === ""
+								? ""
+								: `<a class="project__icons-livelink" href="${this.www}" target="_blank"><i class="fa-regular fa-images"></i></a>`
+						}
 					</div>
 					<div class="project__text">
 						<h3 class="project__title section-title">${
@@ -56,7 +62,23 @@ class Project {
 const projectAboutmePage = new Project(
 	"about me page",
 	`Responsywna strona z projektami. Zawiera podstawowe informacje na temat autora,  portfolio oraz formularz kontaktowy. Projekt zakłada łatwe dodawanie kolejnych projektów poprzez dołączenie ich nazwy i opisu do specjalnego pliku js. Ikona GitHub zajadująca się przy każdym projekcie działa jako odsyłacz do kodu dostępnego na gitHubie.`,
-	aboutMePage
+	aboutMePage,
+	"https://jsta18.netlify.app/"
+);
+
+const projectRestaurantsApp = new Project(
+	`restaurants app`,
+	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji, które odwiedził. Aplikacja tworzy listę restauracji z oceną użytkownika (jedzenie, serwis, cena i ogólne wrażenie). Dla każdej restauracji obliczana jest średnia ocena. Mapa wchodzi w interakcję z listą restauracji. Dane zapisywane w local storage.`,
+	restaurantsApp,
+	"https://jsta-restaurants-app.netlify.app/"
+);
+
+const projectSweetWebsiteShop = new Project(
+	`sweet website shop`,
+	`Sklep internetowy, służący do składania zamówienia na troty artystyczne. Użytkownik może wybrać smak, wygląd i wielkość tortu. Zamówienie może złożyć on-line lub wysyłając wiadomość poprzez formularz kontaktowy.`,
+	sweetWebsitePage,
+	"",
+	true
 );
 
 const projectGuessMyNumber = new Project(
@@ -77,17 +99,40 @@ const projectBankistApp = new Project(
 	bankistApp
 );
 
-const projectRestaurantsApp = new Project(
-	`restaurants app`,
-	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji, które odwiedził. Aplikacja tworzy listę restauracji z oceną użytkownika (jedzenie, serwis, cena i ogólne wrażenie). Dla każdej restauracji obliczana jest średnia ocena. Mapa wchodzi w interakcję z listą restauracji. Dane zapisywane w local storage.`,
-	restaurantsApp,
-	"https://jsta-restaurants-app.netlify.app/"
-);
+class App {
+	#part = 1;
+	#projectsPart = 3;
+	constructor() {
+		this._renderProjects(1);
+		watchProjects.addEventListener("click", this._changePart.bind(this));
+	}
 
-const projectSweetWebsiteShop = new Project(
-	`sweet website shop`,
-	`Sklep internetowy, służący do składania zamówienia na troty artystyczne. Użytkownik może wybrać smak, wygląd i wielkość tortu. Zamówienie może złożyć on-line lub wysyłając wiadomość poprzez formularz kontaktowy.`,
-	sweetWebsitePage,
-	"",
-	true
-);
+	_divideProjects(part) {
+		const start = (this.#part - 1) * this.#projectsPart;
+		const end = this.#part * this.#projectsPart;
+		return projectsArray.slice(start, end);
+	}
+
+	_renderProjects() {
+		this._divideProjects(this.part).forEach((project) =>
+			project._projectMarkup()
+		);
+	}
+
+	_changePart() {
+		this.#part++;
+		this._renderProjects(this.#part);
+		this._deleteButton();
+	}
+
+	_deleteButton() {
+		const partsCount = Math.ceil(projectsArray.length / this.#projectsPart);
+
+		if (this.#part === partsCount) {
+			watchGit.classList.remove("hidden");
+			watchProjects.classList.add("hidden");
+		}
+	}
+}
+
+const projectsApp = new App();
