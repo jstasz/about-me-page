@@ -10,9 +10,6 @@ const watchProjects = document.querySelector(".project__watch-projects");
 const watchGit = document.querySelector(".project__watch-more");
 const projectsArray = [];
 
-console.log(watchGit);
-console.log(watchProjects);
-
 class Project {
 	constructor(title, description, img, www = "", prepair = false) {
 		this.title = title;
@@ -102,6 +99,7 @@ const projectBankistApp = new Project(
 class App {
 	#part = 1;
 	#projectsPart = 3;
+
 	constructor() {
 		this._renderProjects(1);
 		watchProjects.addEventListener("click", this._changePart.bind(this));
@@ -114,9 +112,9 @@ class App {
 	}
 
 	_renderProjects() {
-		this._divideProjects(this.part).forEach((project) =>
-			project._projectMarkup()
-		);
+		this._divideProjects(this.part).forEach((project) => {
+			project._projectMarkup();
+		});
 	}
 
 	_changePart() {

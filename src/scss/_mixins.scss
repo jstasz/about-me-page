@@ -62,3 +62,21 @@
 		transform: translateX(400%) rotate(20deg);
 	}
 }
+
+@keyframes first-projects-slide {
+	from {
+		transform: translateX(500%) scale(1.5);
+	}
+	to {
+		transform: translateX(0%) scale(1);
+	}
+}
+
+@keyframes next-projects-slide {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
