@@ -100,7 +100,6 @@ const skillsHandleHover = function (e) {
 };
 
 skillsIcons.addEventListener("mouseover", skillsHandleHover.bind(0.3));
-skillsIcons.addEventListener("mouseout", skillsHandleHover.bind(1));
 
 // ----- ABOUT ME -----
 

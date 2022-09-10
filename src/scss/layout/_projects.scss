@@ -64,22 +64,22 @@
 		}
 	}
 
-	&__button {
-		width: 25%;
-	}
-
-	&__watch-projects {
+	&__watch {
 		font-size: 1.2em;
-		cursor: pointer;
-	}
+		letter-spacing: 0.1em;
+		color: $dirty-white;
 
-	&__watch-more {
-		font-size: 1.2em;
-
-		&--git {
-			font-weight: 600;
-			color: $main-yellow;
+		&-projects {
 			cursor: pointer;
+		}
+
+		&-more {
+			&--git {
+				font-weight: 600;
+				text-decoration: none;
+				color: $main-yellow;
+				cursor: pointer;
+			}
 		}
 	}
 }

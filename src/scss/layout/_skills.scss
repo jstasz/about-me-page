@@ -34,6 +34,11 @@
 		padding-top: 2em;
 		text-align: center;
 
+		&--link {
+			text-decoration: none;
+			color: $dark-white;
+		}
+
 		& .fa-chevron-down {
 			position: relative;
 			padding: 0.5em;
