@@ -101,7 +101,7 @@ class App {
 	#projectsPart = 3;
 
 	constructor() {
-		this._renderProjects(1);
+		window.addEventListener("scroll", this._showProjects.bind(this));
 		watchProjects.addEventListener("click", this._changePart.bind(this));
 	}
 
@@ -120,10 +120,23 @@ class App {
 	_changePart() {
 		this.#part++;
 		this._renderProjects(this.#part);
-		this._deleteButton();
+		this._changeButton();
 	}
 
-	_deleteButton() {
+	_showProjects() {
+		const projectSectionTop = document.getElementById("projects").offsetTop;
+		const projectBox = document.querySelector(
+			".project__container"
+		).childElementCount;
+		const space = 550;
+
+		if (window.scrollY + space > projectSectionTop && projectBox === 0) {
+			this._renderProjects(1);
+			watchProjects.style.visibility = "visible";
+		}
+	}
+
+	_changeButton() {
 		const partsCount = Math.ceil(projectsArray.length / this.#projectsPart);
 
 		if (this.#part === partsCount) {
