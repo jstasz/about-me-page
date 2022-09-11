@@ -1,8 +1,8 @@
 .skills {
 	width: 100%;
+	@include flex(flex, column, center, "");
 	padding: 2em;
 	letter-spacing: 0.2em;
-	@include flex(flex, column, center, "");
 
 	&__icons {
 		margin: 3em 0;
@@ -14,6 +14,7 @@
 
 	&__icon {
 		padding: 0.5em;
+		opacity: 1;
 
 		& .fa-brands {
 			font-size: 5rem;

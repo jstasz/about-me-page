@@ -49,8 +49,6 @@ const currentSection = function () {
 		Math.trunc(windowScroll) === endOfPage
 			? contactsection.classList.add("current-section")
 			: "";
-
-		// pageYOffset
 	});
 };
 

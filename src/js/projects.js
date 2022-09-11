@@ -1,5 +1,5 @@
-import aboutMePage from "../images/about-me-page.png";
-import guessMyNumber from "../images/gues-my-number.png";
+import aboutMePage from "../images/aboutMePage.png";
+import guessMyNumber from "../images/guessMyNumber.png";
 import sweetWebsitePage from "../images/sweetWebsitePage.jpg";
 import diceGame from "../images/diceGame.png";
 import bankistApp from "../images/bankistApp.png";

@@ -18,6 +18,10 @@
 	@include flex(flex, column, center, center);
 }
 
+.main-title {
+	font-size: 2rem;
+}
+
 .section-title {
 	text-align: center;
 	text-transform: uppercase;
@@ -26,10 +30,6 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	letter-spacing: 0.2rem;
-}
-
-.main-title {
-	font-size: 2rem;
 }
 
 .button {
