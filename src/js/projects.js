@@ -1,6 +1,6 @@
 import aboutMePage from "../images/aboutMePage.png";
 import guessMyNumber from "../images/guessMyNumber.png";
-import sweetWebsitePage from "../images/sweetWebsitePage.jpg";
+import sweetWebsitePage from "../images/sweetWebsitePage.png";
 import diceGame from "../images/diceGame.png";
 import bankistApp from "../images/bankistApp.png";
 import restaurantsApp from "../images/restaurantsApp.jpg";
