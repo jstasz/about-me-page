@@ -28,25 +28,22 @@ class Project {
 		const boxSide = projectsArray.length % 2 === 0 ? `left` : `right`;
 		const markUp = `
 			<div class="project__box project__box--${boxSide}">
-				<img class="project__picture" src="${this.img}" alt="zdjęcie projektu ${
-			this.title
-		}"/>
+				<img class="project__picture" src="${this.img}" alt="zdjęcie projektu ${this.title
+			}"/>
 				<div class="project__content">
 					<div class="project__icons">
 						<a class="project__icons-gitlink" href="https://github.com/jstasz/${this.title.replaceAll(
-							" ",
-							"-"
-						)}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-						${
-							this.www === ""
-								? ""
-								: `<a class="project__icons-livelink" href="${this.www}" target="_blank"><i class="fa-regular fa-images"></i></a>`
-						}
+				" ",
+				"-"
+			)}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+						${this.www === ""
+				? ""
+				: `<a class="project__icons-livelink" href="${this.www}" target="_blank"><i class="fa-regular fa-images"></i></a>`
+			}
 					</div>
 					<div class="project__text">
-						<h3 class="project__title section-title">${
-							this.prepair === true ? this.title + " (w trakcie)" : this.title
-						}</h3>
+						<h3 class="project__title section-title">${this.prepair === true ? this.title + " (w trakcie)" : this.title
+			}</h3>
 						<p class="project__description">${this.description}</p>
 					</div>
 				</div>
@@ -101,8 +98,9 @@ class App {
 	#projectsPart = 3;
 
 	constructor() {
-		window.addEventListener("scroll", this._showProjects.bind(this));
+		this._showProjects()
 		watchProjects.addEventListener("click", this._changePart.bind(this));
+
 	}
 
 	_divideProjects(part) {
@@ -124,16 +122,8 @@ class App {
 	}
 
 	_showProjects() {
-		const projectSectionTop = document.getElementById("projects").offsetTop;
-		const projectBox = document.querySelector(
-			".project__container"
-		).childElementCount;
-		const space = 550;
-
-		if (window.scrollY + space > projectSectionTop && projectBox === 0) {
-			this._renderProjects(1);
-			watchProjects.style.visibility = "visible";
-		}
+		this._renderProjects(1);
+		watchProjects.style.visibility = "visible";
 	}
 
 	_changeButton() {

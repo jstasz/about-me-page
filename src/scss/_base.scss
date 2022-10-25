@@ -10,14 +10,12 @@ $dirty-white: rgb(167, 164, 164);
 $dark-white: rgb(80, 79, 79);
 $main-yellow: rgb(216, 197, 146);
 $btn-color: rgba(0, 0, 0, 0.5);
-$main-gold: linear-gradient(
-	0deg,
-	rgb(210, 169, 83) 0%,
-	rgb(207, 179, 117, 1) 30%,
-	rgb(245, 238, 175) 50%,
-	rgba(207, 179, 117, 1) 60%,
-	rgba(210, 169, 83, 1) 100%
-);
+$main-gold: linear-gradient(0deg,
+		rgb(210, 169, 83) 0%,
+		rgb(207, 179, 117, 1) 30%,
+		rgb(245, 238, 175) 50%,
+		rgba(207, 179, 117, 1) 60%,
+		rgba(210, 169, 83, 1) 100%);
 
 //-----SETTINGS-----
 
@@ -38,12 +36,11 @@ body {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size: 1.3rem;
 	color: $dirty-white;
-	@include backgroundImage(
-		url(../../src/images/background.png),
+	background-color: black;
+	@include backgroundImage(url(../../src/images/background.png),
 		"",
 		"",
-		repeat
-	);
+		repeat);
 }
 
 // SMALL
