@@ -36,5 +36,3 @@ hamburger nav base on CSS-animated hamburgers <i> @author Jonathan Suh @jonsuh (
 
 ### npm
 
-To create dist folder use comand to run parcel "npm install parcel-bundler --save-dev"<br>
-Then use comand "npm start" to watch page on localhost.
