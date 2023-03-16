@@ -1,9 +1,10 @@
-# ABOUT ME PAGE
+<h1 align="center">About me page</h1>
+
+## Project Overview 🎉
 
 https://jsta18.netlify.app/
 
-Portfolio website (fully responsive) created to render best projects.<br>
-Technologies: html, scss, js
+Portfolio website (full responsive) created to render best projects.<br>
 
 ###### Page includes :
 
@@ -32,7 +33,12 @@ hamburger nav base on CSS-animated hamburgers <i> @author Jonathan Suh @jonsuh (
 
 <b> contact form </b> based on firebase.
 
--------------
 
-### npm
+## Tech used 🔧
+
+|                                                   | 
+| ------------------------------------------------------- |
+| HTML                         
+| SCSS (BEM)
+| JS                       
 
