@@ -42,3 +42,11 @@ hamburger nav base on CSS-animated hamburgers <i> @author Jonathan Suh @jonsuh (
 | SCSS (BEM)
 | JS                       
 
+## Instalation
+
+1. Clone the repository with the source code or download it to your computer.
+2. In the terminal, navigate to the folder where the package.json file is located.
+3. Install the dependencies by <i>npm install</i>
+4. Start the development server by typing the command <i>npm run dev</i> in the terminal. The website should now open in your browser at http://localhost:1234/.
+5. If you want to build a production-ready version of the website, type the command <i>npm run build</i>in the terminal. Parcel will generate the output files and place them in the dist/ folder.
+
