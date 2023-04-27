@@ -71,8 +71,7 @@ const projectSweetWebsiteShop = new Project(
 	`sweet website shop`,
 	`Sklep internetowy, służący do składania zamówienia na troty artystyczne. Użytkownik może wybrać smak, wygląd i wielkość tortu. Zamówienie może złożyć on-line lub wysyłając wiadomość poprzez formularz kontaktowy.`,
 	sweetWebsitePage,
-	"",
-	true
+	"https://sweet-website-shop.netlify.app/"
 );
 
 const projectGuessMyNumber = new Project(
