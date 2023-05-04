@@ -4,6 +4,7 @@ import sweetWebsitePage from "../images/sweetWebsitePage.png";
 import diceGame from "../images/diceGame.png";
 import bankistApp from "../images/bankistApp.png";
 import restaurantsApp from "../images/restaurantsApp.jpg";
+import weatherApp from "../images/weatherApp.png";
 
 const projectsContainer = document.querySelector(".project__container");
 const watchProjects = document.querySelector(".project__watch-projects");
@@ -68,7 +69,7 @@ const projectSweetWebsiteShop = new Project(
 );
 
 const projectWeatherApp = new Project(
-	`app weather`,
+	`weather app`,
 	`Aplikacja pobierająca pogodę na podstawie lokalizacji użytkownika. Dostęp do danych z obecnego dnia (także kolejne godziny), dnia wcześniejszego oraz 5 kolejnych dni. Informacje na temat temperatury, przewidywanych opadów. Zmiana tła aplikacji w zależności od pogody. Aplikacja napisana z wykorzystaniem Angulara oraz ngRx. `,
 	weatherApp,
 	"",
