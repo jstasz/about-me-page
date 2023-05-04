@@ -70,7 +70,7 @@ const projectSweetWebsiteShop = new Project(
 const projectWeatherApp = new Project(
 	`weather app`,
 	`Aplikacja pobierająca pogodę na podstawie lokalizacji użytkownika. Dostęp do danych z obecnego dnia (także kolejne godziny), dnia wcześniejszego oraz 5 kolejnych dni. Informacje na temat temperatury, przewidywanych opadów. Zmiana tła aplikacji w zależności od pogody. Aplikacja napisana z wykorzystaniem Angulara oraz ngRx. `,
-	WeatherApp,
+	weatherApp,
 	"",
 	true
 );
