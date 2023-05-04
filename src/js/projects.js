@@ -67,14 +67,6 @@ const projectSweetWebsiteShop = new Project(
 	"https://sweet-website-shop.netlify.app/"
 );
 
-const projectWeatherApp = new Project(
-	`weather app`,
-	`Aplikacja pobierająca pogodę na podstawie lokalizacji użytkownika. Dostęp do danych z obecnego dnia (także kolejne godziny), dnia wcześniejszego oraz 5 kolejnych dni. Informacje na temat temperatury, przewidywanych opadów. Zmiana tła aplikacji w zależności od pogody. Aplikacja napisana z wykorzystaniem Angulara oraz ngRx. `,
-	weatherApp,
-	"",
-	true
-);
-
 const projectRestaurantsApp = new Project(
 	`restaurants app`,
 	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji, które odwiedził. Aplikacja tworzy listę restauracji z oceną użytkownika (jedzenie, serwis, cena i ogólne wrażenie). Dla każdej restauracji obliczana jest średnia ocena. Mapa wchodzi w interakcję z listą restauracji. Dane zapisywane w local storage.`,
