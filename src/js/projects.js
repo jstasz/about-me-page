@@ -66,11 +66,11 @@ const projectSweetWebsiteShop = new Project(
 );
 
 const projectRecipesApp = new Project(
-	`recipes app`,
+	`recipes app react`,
 	`Aplikacja umozliwiająca przeglądanie przepisów (korzysta z tasty API). Dla zalogowanych uzytkowników dodatkowo posiada funkcję dodawania własnych przepisów oraz tworzenie listy zakupów. Lista przepisów oraz zakupów przechowywana na koncie uzytkownika - firebase.`,
 	`React Typescript`,
 	recipesApp,
-	"https://sweet-website-shop.netlify.app/"
+	"https://react-hosting-ad9af.firebaseapp.com/"
 );
 
 const projectWeatherApp = new Project(
