@@ -37,5 +37,5 @@ const skillsHandleHover = function (e) {
 	});
 };
 
-skillsIcons.addEventListener("mouseover", skillsHandleHover.bind(0.3));
+skillsIcons.addEventListener("mouseover", skillsHandleHover.bind(0.5));
 skillsIcons.addEventListener("mouseout", skillsHandleHover.bind(1));

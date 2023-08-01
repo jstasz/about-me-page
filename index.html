@@ -1,230 +1,194 @@
 <!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="about me webpage" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
 
-		<link href="./src/scss/style.scss" rel="stylesheet" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="about me webpage" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
 
-		<title>Justyna Szajuk</title>
-		<script
-			src="https://kit.fontawesome.com/434e1998f3.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<header>
-			<button class="hamburger hamburger--spin" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-			<nav class="nav">
-				<a class="nav__link" href="#about-me">o mnie</a>
-				<a class="nav__link nav__link--skills" href="#skills">umiejętności</a>
-				<a class="nav__link" href="#projects">projekty</a>
-				<a class="nav__link" href="#contact">kontakt</a>
-			</nav>
-		</header>
+	<link href="./src/scss/style.scss" rel="stylesheet" />
 
-		<div class="main-section-container wrapper">
-			<section id="about-me" class="section about-me current-section">
-				<div class="about-me__title">
-					<h1 class="section-title main-title">Justyna Szajuk</h1>
-					<h1 class="section-title main-title">Frontend Dev</h1>
+	<title>Justyna Szajuk</title>
+	<script src="https://kit.fontawesome.com/434e1998f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<button class="hamburger hamburger--spin" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<nav class="nav">
+			<a class="nav__link" href="#about-me">o mnie</a>
+			<a class="nav__link nav__link--skills" href="#skills">umiejętności</a>
+			<a class="nav__link" href="#projects">projekty</a>
+			<a class="nav__link" href="#contact">kontakt</a>
+		</nav>
+	</header>
+
+	<div class="main-section-container wrapper">
+		<section id="about-me" class="section about-me current-section">
+			<div class="about-me__title">
+				<h1 class="section-title main-title">Justyna Szajuk</h1>
+				<h1 class="section-title main-title">Frontend Dev</h1>
+			</div>
+			<div class="about-me__description">
+				<p>
+					Jestem pasjonatem tworzenia stron internetowych i szukam
+					doświadczenia zawodowego jako Junior Frontend Developer. Obecnie z
+					dużym zaangażowaniem rozwijam się w tym kierunku budując nowe
+					projekty. Podnoszę też swoje kwalifikacje poprzez różnego rodzaju
+					kursy tematyczne. Moją mocną stroną jest przede wszystkim
+					kreatywność, a także dbałość o szczegóły i silne nastawienie na
+					zdobywanie nowych umiejętności. Poszukuję stanowiska juniorskiego,
+					na którym wykorzystam zdobytą wiedzę i zyskam możliwość dalszego
+					rozwoju.
+				</p>
+			</div>
+			<div class="about-me__animations">
+				<p class="about-me__animation about-me__animation--active">
+					magister <span> kryminologii</span>
+				</p>
+				<p class="about-me__animation">
+					7 lat <span>doświadczenia </span>w bankowości
+				</p>
+				<p class="about-me__animation">
+					tytuł <span>mistrza świata</span> Taekwondo
+				</p>
+				<p class="about-me__animation">
+					zafascynowana <span>programowaniem</span>
+				</p>
+				<p class="about-me__animation about-me__animation--last">
+					miłośnik <span>tortów </span>artystycznnych
+				</p>
+			</div>
+		</section>
+		<section id="skills" class="section skills">
+			<h2 class="skills__title section-title">umiejętności</h2>
+			<div class="skills__icons">
+				<div class="skills__icon">
+					<i class="fa-brands fa-angular"></i>
+					<p class="icon-name">angular</p>
 				</div>
-				<div class="about-me__description">
-					<p>
-						Jestem pasjonatem tworzenia stron internetowych i szukam
-						doświadczenia zawodowego jako Junior Frontend Developer. Obecnie z
-						dużym zaangażowaniem rozwijam się w tym kierunku budując nowe
-						projekty. Podnoszę też swoje kwalifikacje poprzez różnego rodzaju
-						kursy tematyczne. Moją mocną stroną jest przede wszystkim
-						kreatywność, a także dbałość o szczegóły i silne nastawienie na
-						zdobywanie nowych umiejętności. Poszukuję stanowiska juniorskiego,
-						na którym wykorzystam zdobytą wiedzę i zyskam możliwość dalszego
-						rozwoju.
-					</p>
+				<div class="skills__icon">
+					<i class="fa-brands fa-react"></i>
+					<p class="icon-name">react</p>
 				</div>
-				<div class="about-me__animations">
-					<p class="about-me__animation about-me__animation--active">
-						magister <span> kryminologii</span>
-					</p>
-					<p class="about-me__animation">
-						7 lat <span>doświadczenia </span>w bankowości
-					</p>
-					<p class="about-me__animation">
-						tytuł <span>mistrza świata</span> Taekwondo
-					</p>
-					<p class="about-me__animation">
-						zafascynowana <span>programowaniem</span>
-					</p>
-					<p class="about-me__animation about-me__animation--last">
-						miłośnik <span>tortów </span>artystycznnych
-					</p>
+				<div class="skills__icon">
+					<i class="fa-brands fa-t"></i>
+					<p class="icon-name">typescript</p>
 				</div>
-			</section>
-			<section id="skills" class="section skills">
-				<h2 class="skills__title section-title">umiejętności</h2>
-				<div class="skills__icons">
-					<div class="skills__icon">
-						<i class="fa-brands fa-html5"></i>
-						<p class="icon-name">html</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-css3-alt"></i>
-						<p class="icon-name">css</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-sass"></i>
-						<p class="icon-name">sass</p>
-					</div>
-					<div class="skills__icon skills__last-icon">
-						<i class="fa-brands fa-bootstrap"></i>
-						<p class="icon-name">bootstrap</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-git-alt"></i>
-						<p class="icon-name">GIT</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-github-square"></i>
-						<p class="icon-name">gitHub</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-js-square"></i>
-						<p class="icon-name">javaScript</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-t"></i>
-						<p class="icon-name">typescript</p>
-					</div>
-					<div class="skills__icon">
-						<i class="fa-brands fa-angular"></i>
-						<p class="icon-name">angular</p>
-					</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-js-square"></i>
+					<p class="icon-name">javaScript</p>
 				</div>
-				<div class="skills__watch-projects">
-					<a class="skills__watch-projects--link" href="#projects"
-						><i class="fa-solid fa-chevron-down"></i
-					></a>
+				<div class="skills__icon">
+					<i class="fa-brands fa-git-alt"></i>
+					<p class="icon-name">GIT</p>
 				</div>
-			</section>
+				<div class="skills__icon">
+					<i class="fa-brands fa-github-square"></i>
+					<p class="icon-name">gitHub</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-html5"></i>
+					<p class="icon-name">html</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-css3-alt"></i>
+					<p class="icon-name">css</p>
+				</div>
+				<div class="skills__icon">
+					<i class="fa-brands fa-sass"></i>
+					<p class="icon-name">sass</p>
+				</div>
+				<div class="skills__icon skills__last-icon">
+					<i class="fa-brands fa-bootstrap"></i>
+					<p class="icon-name">bootstrap</p>
+				</div>
+			</div>
+			<div class="skills__watch-projects">
+				<a class="skills__watch-projects--link" href="#projects"><i class="fa-solid fa-chevron-down"></i></a>
+			</div>
+		</section>
+	</div>
+	<section id="projects" class="section project">
+		<div class="section-container project-container wrapper">
+			<h2 class="project__title section-title">moje projekty</h2>
+			<div class="project__container">
+				<!-- PROJEKTY -->
+			</div>
+			<p class="project__watch project__watch-projects">zobacz więcej</p>
+			<p class="project__watch project__watch-more hidden">
+				te i inne projekty dostępne na
+				<a class="project__watch-more--git" href="https://github.com/jstasz" target="_blank">
+					<span> gitHub</span>
+				</a>
+			</p>
 		</div>
-		<section id="projects" class="section project">
-			<div class="section-container project-container wrapper">
-				<h2 class="project__title section-title">moje projekty</h2>
-				<div class="project__container">
-					<!-- PROJEKTY -->
-				</div>
-				<p class="project__watch project__watch-projects">zobacz więcej</p>
-				<p class="project__watch project__watch-more hidden">
-					te i inne projekty dostępne na
-					<a
-						class="project__watch-more--git"
-						href="https://github.com/jstasz"
-						target="_blank"
-					>
-						<span> gitHub</span>
-					</a>
-				</p>
-			</div>
-		</section>
-		<section id="contact" class="section contact">
-			<div class="section-container contact__container wrapper">
-				<h2 class="contact__title section-title">kontakt</h2>
-				<div class="contact__box">
-					<div class="contact__alert">Twoja wiadomość została wysłana</div>
+	</section>
+	<section id="contact" class="section contact">
+		<div class="section-container contact__container wrapper">
+			<h2 class="contact__title section-title">kontakt</h2>
+			<div class="contact__box">
+				<div class="contact__alert">Twoja wiadomość została wysłana</div>
 
-					<form
-						method="post"
-						action="/send_form.php"
-						id="contactForm"
-						class="contact__form"
-					>
-						<div>
-							<label for="name"></label>
-							<input
-								class="contact-input"
-								type="text"
-								name="name"
-								id="name"
-								placeholder="imię"
-								required
-							/>
-						</div>
-						<div>
-							<label for="email"></label>
-							<input
-								class="contact-input"
-								type="email"
-								name="email"
-								id="email"
-								placeholder="e-mail"
-								required
-							/>
-						</div>
-						<div>
-							<label for="message"></label>
-							<textarea
-								class="contact-input contact-textarea"
-								name="message"
-								id="message"
-								placeholder="wiadomość"
-								required
-							></textarea>
-						</div>
-						<div class="form__btn">
-							<button type="submit" class="button contact-btn">Wyślij</button>
-						</div>
-					</form>
-					<div class="contact__informations">
-						<div class="contact__information">
-							<i class="contact__information--icon fa-solid fa-phone"></i>
-							<p class="contact__information--text">+48 000 000 000</p>
-						</div>
-						<div class="contact__information">
-							<i class="contact__information--icon fa-solid fa-at"></i>
-							<p class="contact__information--text">jszajuk@gmail.com</p>
-						</div>
+				<form method="post" action="/send_form.php" id="contactForm" class="contact__form">
+					<div>
+						<label for="name"></label>
+						<input class="contact-input" type="text" name="name" id="name" placeholder="imię" required />
+					</div>
+					<div>
+						<label for="email"></label>
+						<input class="contact-input" type="email" name="email" id="email" placeholder="e-mail"
+							required />
+					</div>
+					<div>
+						<label for="message"></label>
+						<textarea class="contact-input contact-textarea" name="message" id="message"
+							placeholder="wiadomość" required></textarea>
+					</div>
+					<div class="form__btn">
+						<button type="submit" class="button contact-btn">Wyślij</button>
+					</div>
+				</form>
+				<div class="contact__informations">
+					<div class="contact__information">
+						<i class="contact__information--icon fa-solid fa-phone"></i>
+						<p class="contact__information--text">+48 000 000 000</p>
+					</div>
+					<div class="contact__information">
+						<i class="contact__information--icon fa-solid fa-at"></i>
+						<p class="contact__information--text">jszajuk@gmail.com</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<footer class="footer">
-			<div class="footer__container">
-				<p class="footer__text">
-					Copyright &copy; <span class="footer__year"></span> | all rights
-					reserved
-				</p>
-				<div class="footer__icons">
-					<a
-						class="footer__icon"
-						href="https://github.com/jstasz"
-						target="_blank"
-						><i class="fa-brands fa-square-github"></i
-					></a>
-					<a
-						class="footer__icon"
-						href="https://www.linkedin.com/in/justyna-szajuk-817064240/"
-						target="_blank"
-						><i class="fa-brands fa-linkedin"></i
-					></a>
-				</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__container">
+			<p class="footer__text">
+				Copyright &copy; <span class="footer__year"></span> | all rights
+				reserved
+			</p>
+			<div class="footer__icons">
+				<a class="footer__icon" href="https://github.com/jstasz" target="_blank"><i
+						class="fa-brands fa-square-github"></i></a>
+				<a class="footer__icon" href="https://www.linkedin.com/in/justyna-szajuk-817064240/" target="_blank"><i
+						class="fa-brands fa-linkedin"></i></a>
 			</div>
-		</footer>
-		<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-		<script type="module" src="./src/js/script.js"></script>
-	</body>
+		</div>
+	</footer>
+	<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+	<script type="module" src="./src/js/script.js"></script>
+</body>
+
 </html>
