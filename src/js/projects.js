@@ -1,8 +1,5 @@
 import aboutMePage from "../images/aboutMePage.png";
-// import guessMyNumber from "../images/guessMyNumber.png";
 import sweetWebsitePage from "../images/sweetWebsitePage.png";
-// import diceGame from "../images/diceGame.png";
-// import bankistApp from "../images/bankistApp.png";
 import restaurantsApp from "../images/restaurantsApp.jpg";
 import weatherApp from "../images/weatherApp.png";
 import recipesApp from '../images/recipesApp.png'
@@ -13,11 +10,12 @@ const watchGit = document.querySelector(".project__watch-more");
 const projectsArray = [];
 
 class Project {
-	constructor(title, description, technologies, img, www = "", prepair = false) {
+	constructor(title, description, technologies, img,  gitHub, www = "", prepair = false) {
 		this.title = title;
 		this.description = description;
 		this.technologies = technologies;
 		this.img = img;
+		this.gitHub = gitHub;
 		this.www = www;
 		this.prepair = prepair;
 		this._addTotable();
@@ -35,10 +33,7 @@ class Project {
 			}"/>
 				<div class="project__content">
 					<div class="project__icons">
-						<a class="project__icons-gitlink" href="https://github.com/jstasz/${this.title.replaceAll(
-				" ",
-				"-"
-			)}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+						<a class="project__icons-gitlink" href="https://github.com/jstasz/${this.gitHub}" target="_blank"><i class="fa-brands fa-github-square"></i></a>
 						${this.www === ""
 				? ""
 				: `<a class="project__icons-livelink" href="${this.www}" target="_blank"><i class="fa-regular fa-images"></i></a>`
@@ -59,60 +54,48 @@ class Project {
 
 const projectSweetWebsiteShop = new Project(
 	`sweet website shop`,
-	`Sklep internetowy, służący do składania zamówienia na troty artystyczne. Użytkownik może wybrać smak, wygląd i wielkość tortu. Zamówienie może złożyć on-line lub wysyłając wiadomość poprzez formularz kontaktowy.`,
+	`An online pastry shop with the additional option to order artistic cakes. Users can choose the flavor, design, and size of the cake. Orders can be placed for a specific date, online or by sending a message through the contact form. The website allows user registration, the ability to add items to favorites, and is integrated with Firebase.`,
 	`Angular Typescript.`,
 	sweetWebsitePage,
-	"https://sweet-website-shop.netlify.app/"
+	"sweet-website-shop",
+	"https://sweet-website-shop.netlify.app/",
 );
 
 const projectRecipesApp = new Project(
 	`recipes app react`,
-	`Aplikacja umozliwiająca przeglądanie przepisów (korzysta z tasty API). Dla zalogowanych uzytkowników dodatkowo posiada funkcję dodawania własnych przepisów oraz tworzenie listy zakupów. Lista przepisów oraz zakupów przechowywana na koncie uzytkownika - firebase.`,
+	`An application enabling users to browse recipes (utilizing the Tasty API). For logged-in users, it includes the functionality to add their own recipes and create a shopping list. The list of recipes and shopping items is stored on the user's account using Firebase.`,
 	`React Typescript`,
 	recipesApp,
-	"https://react-hosting-ad9af.firebaseapp.com/"
+	"recipes-app-react",
+	"https://recipes-app-react-jb.netlify.app/",
 );
 
 const projectWeatherApp = new Project(
 	`weather app`,
-	`Aplikacja pobierająca pogodę na podstawie lokalizacji użytkownika. Dostęp do danych z obecnego dnia (także kolejne godziny), dnia wcześniejszego oraz 5 kolejnych dni. Informacje na temat temperatury, przewidywanych opadów. Zmiana tła aplikacji w zależności od pogody.`,
+	`An application fetching weather data based on the user's location. It provides access to data for the current day (including hourly forecasts), the previous day, and the next 5 days. Information includes temperature, precipitation forecasts, and the ability to change the app's background depending on the weather.`,
 	`Angular(ngRx) Typescript.`,
-	weatherApp
+	weatherApp,
+	"weather-app",
+	"https://weather-app-jb.netlify.app/"
 );
 
 const projectRestaurantsApp = new Project(
 	`restaurants app`,
-	`Aplikacja umożliwiająca użytkownikowi dodawanie na mapie restauracji, które odwiedził. Aplikacja tworzy listę restauracji z oceną użytkownika (jedzenie, serwis, cena i ogólne wrażenie). Dla każdej restauracji obliczana jest średnia ocena. Mapa wchodzi w interakcję z listą restauracji. Dane zapisywane w local storage.`,
+	`An application allowing users to add restaurants they have visited to a map. The app creates a list of restaurants with user ratings for food, service, price, and overall experience. An average rating is calculated for each restaurant. The map interacts with the restaurant list. Data is saved in local storage.`,
 	`HTML CSS JavaScript`,
 	restaurantsApp,
+	"restaurants-app",
 	"https://jsta-restaurants-app.netlify.app/"
 );
-
-// const projectBankistApp = new Project(
-// 	`bankist app`,
-// 	`Aplikacja banku umożliwiająca (po zalogowaniu danego użytkownika) przesyłanie pieniędzy, wnioskowanie o kredyt, zamykanie konta. Użytkownik widzi aktualny stan konta, historię operacji(z możliwością sortowania) oraz sumę wpłat i wypłat. Automatyczne wylogowanie wyloguje użytkownika po 5 minutach bezczynności. HTML, CSS, JavaScript`,
-// 	bankistApp
-// );
 
 const projectAboutmePage = new Project(
 	"about me page",
 	`Responsywna strona z projektami. Zawiera podstawowe informacje na temat autora,  portfolio oraz formularz kontaktowy. Projekt zakłada łatwe dodawanie kolejnych projektów poprzez dołączenie ich nazwy i opisu do specjalnego pliku js. Ikona GitHub zajadująca się przy każdym projekcie działa jako odsyłacz do kodu dostępnego na gitHubie.`,
 	`HTML CSS JavaScript`,
 	aboutMePage,
+	"about-me-page",
 	"https://jsta18.netlify.app/"
 );
-
-// const projectGuessMyNumber = new Project(
-// 	`guess my number`,
-// 	`Gra dla jednej osoby polegająca na odnalezieniu prawidłowego numeru od 0 do 20. Prawidłowa liczba jest przypisywana losowo. Użytkownik na start dosteje 20 pkt. Przy każdej nieudanej próbie wskazania numeru, dostaje informację czy liczba jest za mała czy za duża oraz otrzymuje -1 punkt. Najwyższy zdobyty wynik jest przechowywany dla użytkownika.`,
-// 	guessMyNumber
-// );
-
-// const projectDiceGame = new Project(
-// 	`dice game`,
-// 	`Gra dla 2 użytkowników polegająca na rzucaniu kostką. Użytkownik rzuca kostką i zdobywa punkty dopóki nie wyrzuci 1 oczka lub nie odda kolejki drugiej osobie. W momecie wyrzucenia 1 oczka, użytkownik traci swoją kolejkę oraz zerują mu się zdobyte w danej rundzie punkty. Wygrywa osoba, która szybciej osiągnie wynik 100 punktów.`,
-// 	diceGame
-// );
 
 class App {
 	#part = 1;
