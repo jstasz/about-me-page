@@ -2,7 +2,7 @@
 
 ## Project Overview 🎉
 
-https://jsta18.netlify.app/
+https://justyna-bronisz.netlify.app/
 
 Portfolio website (full responsive) created to render best projects.<br>
 
@@ -17,8 +17,19 @@ Portfolio website (full responsive) created to render best projects.<br>
 
 ### Projects
 
-Adding new project based on class Project with constructor : (title, description, img, www, prepair);
-Each project has a link to gitHub. It also can have link to www. If some project is in the process you can add comment by set prepair at true.
+Adding new project based on class Project with constructor : (title, description, img, gitHub, www, prepair);
+Each project has a link to gitHub. It also can have link to www. If some project is in the process you can add comment by set prepair at true. 
+
+To add a new project, you need to create a new variable based on the Project class using the following template:
+
+const newProject = new Project(
+  `title`,
+  `description`,
+  `used technologies`,
+  image(imported from the src/images folder),
+  `GitHub link`,
+  `URL`, 
+);
 
 App to render projects does it automatically. There are three projects on the front page. You can watch more project if you want or click link to gitHub if you want to watch all.
 
@@ -47,6 +58,6 @@ hamburger nav base on CSS-animated hamburgers <i> @author Jonathan Suh @jonsuh (
 1. Clone the repository with the source code or download it to your computer.
 2. In the terminal, navigate to the folder where the package.json file is located.
 3. Install the dependencies by <i>npm install</i>
-4. Start the development server by typing the command <i>npm run dev</i> in the terminal. The website should now open in your browser at http://localhost:1234/.
+4. Start the development server by typing the command <i>npm start</i> in the terminal. The website should now open in your browser at http://localhost:1234/.
 5. If you want to build a production-ready version of the website, type the command <i>npm run build</i>in the terminal. Parcel will generate the output files and place them in the dist/ folder.
 
