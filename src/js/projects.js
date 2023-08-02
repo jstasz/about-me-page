@@ -55,7 +55,7 @@ class Project {
 const projectSweetWebsiteShop = new Project(
 	`sweet website shop`,
 	`An online pastry shop with the additional option to order artistic cakes. Users can choose the flavor, design, and size of the cake. Orders can be placed for a specific date, online or by sending a message through the contact form. The website allows user registration, the ability to add items to favorites, and is integrated with Firebase.`,
-	`Angular Typescript.`,
+	`Angular Typescript`,
 	sweetWebsitePage,
 	"sweet-website-shop",
 	"https://sweet-website-shop.netlify.app/",
@@ -73,10 +73,10 @@ const projectRecipesApp = new Project(
 const projectWeatherApp = new Project(
 	`weather app`,
 	`An application fetching weather data based on the user's location. It provides access to data for the current day (including hourly forecasts), the previous day, and the next 5 days. Information includes temperature, precipitation forecasts, and the ability to change the app's background depending on the weather.`,
-	`Angular(ngRx) Typescript.`,
+	`Angular(ngRx) Typescript`,
 	weatherApp,
 	"weather-app",
-	"https://weather-app-jb.netlify.app/"
+	"https://jbronisz-weather-app.netlify.app/"
 );
 
 const projectRestaurantsApp = new Project(
