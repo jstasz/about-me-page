@@ -64,7 +64,7 @@ const projectSweetWebsiteShop = new Project(
 const projectRecipesApp = new Project(
 	`recipes app react`,
 	`An application enabling users to browse recipes (utilizing the Tasty API). For logged-in users, it includes the functionality to add their own recipes and create a shopping list. The list of recipes and shopping items is stored on the user's account using Firebase.`,
-	`React Typescript`,
+	`React Redux Typescript`,
 	recipesApp,
 	"recipes-app-react",
 	"https://recipes-app-react-jb.netlify.app/",
