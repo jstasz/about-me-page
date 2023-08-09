@@ -3,6 +3,7 @@ import sweetWebsitePage from "../images/sweetWebsitePage.png";
 import restaurantsApp from "../images/restaurantsApp.jpg";
 import weatherApp from "../images/weatherApp.png";
 import recipesApp from '../images/recipesApp.png'
+import travelApp from '../images/travel-app.png'
 
 const projectsContainer = document.querySelector(".project__container");
 const watchProjects = document.querySelector(".project__watch-projects");
@@ -68,6 +69,15 @@ const projectRecipesApp = new Project(
 	recipesApp,
 	"recipes-app-react",
 	"https://recipes-app-react-jb.netlify.app/",
+);
+
+const projectTravelApp = new Project(
+	`travel app`,
+	`An application for travel planning. You can enter the destination - city, country, places to visit, restaurants worth visiting, and foods worth trying. You can edit or delete trips at any time. It utilizes an API.`,
+	`React NextJS`,
+	travelApp,
+	"next-js-travel-app",
+	"",
 );
 
 const projectWeatherApp = new Project(
